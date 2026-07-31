@@ -1,0 +1,97 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: rgb(32, 32, 32);
+}
+
+/*Header*/
+#header
+{
+  position: relative;
+  display: flex;
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  height: 80px;
+}
+
+#l-header
+{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+#menu-icon
+{
+  width: 70px;
+  margin: 5px;
+}
+
+#r-header
+{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+#h-logo
+{
+  width: 65px;
+  margin: 7.5px;
+}
+
+/*Banner*/
+#banner
+{
+  display: block;
+  width: 100%;
+}
+
+/*Search Bar*/
+#search-bar
+{
+  width: 90%;
+  height: 40px;
+  margin: 15px 5%;
+  text-align: center;
+  font-size: 18px;
+  color: goldenrod;
+}
+
+/*Catalog*/
+#catalog
+{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  height: fit-content;;
+  padding: 10px;
+}
+
+.product-card
+{
+  position: relative;
+  text-align: center;
+}
+
+.product-img
+{
+  width: 80%;
+}
+
+.product-name
+{
+  color: rgb(142, 109, 24);
+  font-size: 15px;
+}
