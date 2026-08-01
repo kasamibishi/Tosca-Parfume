@@ -101,15 +101,6 @@ input[type="text"]::placeholder {
   position: relative;
   text-align: center;
   margin-bottom: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.product-card.selected-card {
-  background-color: rgba(205, 164, 52, 0.1);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(205, 164, 52, 0.3);
-  cursor: pointer;
 }
 
 .product-img
@@ -152,35 +143,6 @@ input[type="text"]::placeholder {
   align-items: center;
   justify-content: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 56px;
-  overflow: hidden; /* Prevents text from spilling out before it expands */
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease, box-shadow 0.2s ease;
-}
-
-#wa-text {
-  max-width: 0;
-  opacity: 0;
-  white-space: nowrap;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  margin-left: 0;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-float.active-order {
-  width: auto;
-  max-width: 90vw; /* Prevents it from breaking the screen on small phones */
-  padding: 0 20px 0 12px;
-  border-radius: 30px;
-}
-
-.whatsapp-float.active-order #wa-text {
-  max-width: 200px;
-  opacity: 1;
-  margin-left: 10px;
 }
 
 .whatsapp-float:hover {
