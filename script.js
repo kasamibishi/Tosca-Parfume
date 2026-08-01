@@ -14,3 +14,8 @@ searchBar.addEventListener('input', (e) => {
         }
     });
 });
+
+function generateWhatsAppLink(phoneNumber, productName, price) {
+    const text = `Përshëndetje! Dëshiroj të porosis: ${productName} (${price} MKD).`;
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+}
