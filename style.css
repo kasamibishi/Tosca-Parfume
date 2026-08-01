@@ -101,6 +101,15 @@ input[type="text"]::placeholder {
   position: relative;
   text-align: center;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card.selected-card {
+  background-color: rgba(205, 164, 52, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(205, 164, 52, 0.3);
+  cursor: pointer;
 }
 
 .product-img
@@ -128,35 +137,63 @@ input[type="text"]::placeholder {
 
 /*WhatsApp Icon*/
 .whatsapp-float {
-    position: fixed;
-    width: 56px;
-    height: 56px;
-    bottom: 24px;
-    right: 24px;
-    background-color: #25D366; /* Official WhatsApp Green for instant recognition */
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25D366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 56px;
+  overflow: hidden; /* Prevents text from spilling out before it expands */
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease, box-shadow 0.2s ease;
+}
+
+#wa-text {
+  max-width: 0;
+  opacity: 0;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 0;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float.active-order {
+  width: auto;
+  max-width: 90vw; /* Prevents it from breaking the screen on small phones */
+  padding: 0 20px 0 12px;
+  border-radius: 30px;
+}
+
+.whatsapp-float.active-order #wa-text {
+  max-width: 200px;
+  opacity: 1;
+  margin-left: 10px;
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 6px 16px rgba(37, 211, 102, 0.5);
+  transform: scale(1.08);
+  box-shadow: 0px 6px 16px rgba(37, 211, 102, 0.5);
 }
 
-/* Optional soft pulse to catch user eye */
 @keyframes pulse-green {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
 .whatsapp-float {
-    animation: pulse-green 2s infinite;
+  animation: pulse-green 2s infinite;
 }
