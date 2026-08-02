@@ -63,3 +63,19 @@ scrollTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+const loader = document.getElementById('page-loader');
+
+function hideLoader() {
+  if (!loader.classList.contains('hide-loader')) {
+    loader.classList.add('hide-loader');
+    
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 400); 
+  }
+}
+
+window.addEventListener('load', hideLoader);
+
+setTimeout(hideLoader, 3000);
