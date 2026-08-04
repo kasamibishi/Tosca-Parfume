@@ -59,8 +59,7 @@ body
 }
 
 /*Header*/
-#header
-{
+#header {
   position: relative;
   display: flex;
   background-color: rgb(32, 32, 32);
@@ -68,32 +67,60 @@ body
   height: 70px;
 }
 
-#l-header
-{
+/* Left Section: Menu */
+#l-header {
   position: relative;
-  width: 50%;
+  display: flex;
+  align-items: center; 
+  width: 33.3%;
   height: 100%;
 }
 
-#menu-icon
-{
+#menu-icon {
   width: 60px;
   margin: 5px;
+  cursor: pointer;
 }
 
-#r-header
-{
+#c-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  height: 100%;
+  gap: 6px;
+}
+
+#r-header {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  align-items: center;
+  width: 33.3%;
   height: 100%;
 }
 
-#h-logo
-{
+#h-logo {
   width: 55px;
   margin: 7.5px;
+}
+
+.lang-btn {
+  background: transparent;
+  color: #cda434;
+  border: 1px solid #cda434;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+  background: #cda434;
+  color: rgb(32, 32, 32);
 }
 
 /*Banner*/
@@ -147,6 +174,33 @@ input[type="text"]::placeholder {
   position: relative;
   text-align: center;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-order {
+  display: inline-block; /* Stops the button from forcing 100% width */
+  background-color: #cda434;
+  color: rgb(32, 32, 32); 
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 18px; /* Sliced the vertical thickness in half */
+  margin-top: 10px; 
+  margin-bottom: 10px; /* Gives the button breathing room inside the card */
+  border-radius: 4px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Dropped from 700 to look more elegant */
+  font-size: 0.75rem; /* Scaled down the text */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-order:active {
+  background-color: #b38f2d; 
+  transform: scale(0.95); 
 }
 
 .product-img
@@ -348,4 +402,24 @@ input[type="text"]::placeholder {
 
 #scroll-top-btn:active {
   transform: scale(0.9);
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+}
+.lang-btn {
+  background: transparent;
+  color: #cda434;
+  border: 1px solid #cda434;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.lang-btn.active {
+  background: #cda434;
+  color: rgb(32, 32, 32);
 }
