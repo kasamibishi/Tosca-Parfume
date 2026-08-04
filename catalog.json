@@ -427,8 +427,98 @@
   },
   {
     "id": 72,
-    "name": "My Way - Giorgio Armani",
+    "name": "Dolce & Gabbana - Devotion",
     "price": "MKD1,800",
-    "image": "images/catalog/my-way_giorgio-armani.webp"
+    "image": "images/catalog/dolce-and-gabban_devotion.webp"
+  },
+  {
+    "id": 73,
+    "name": "Power of You - Emporio Armani",
+    "price": "MKD1,800",
+    "image": "images/catalog/power-of-you_emporio-armani.webp"
+  },
+  {
+    "id": 74,
+    "name": "Valentino - Donna",
+    "price": "MKD1,800",
+    "image": "images/catalog/valentino_donna.webp"
+  },
+  {
+    "id": 75,
+    "name": "Voce Viva - Valentino",
+    "price": "MKD1,800",
+    "image": "images/catalog/voce-viva_valentino.webp"
+  },
+  {
+    "id": 76,
+    "name": "Libre Vanille Couture - Yes Saint Laurent",
+    "price": "MKD1,800",
+    "image": "images/catalog/libre-vanille-coutre_yes-saint-laurent.webp"
+  },
+  {
+    "id": 77,
+    "name": "Libre - Yes Saint Laurent",
+    "price": "MKD1,800",
+    "image": "images/catalog/libre_yes-saint-laurent.webp"
+  },
+  {
+    "id": 78,
+    "name": "Libre Berry Crush - Yes Saint Laurent",
+    "price": "MKD1,800",
+    "image": "images/catalog/libre-berry-crush_yes-saint-laurent.webp"
+  },
+  {
+    "id": 79,
+    "name": "Versace - Eros Najim",
+    "price": "MKD1,800",
+    "image": "images/catalog/versace_eros-najim.webp"
+  },
+  {
+    "id": 80,
+    "name": "Libre - Yes Saint Laurent",
+    "price": "MKD1,800",
+    "image": "images/catalog/libre_yes-saint-laurent2.webp"
+  },
+  {
+    "id": 81,
+    "name": "Libre - Yes Saint Laurent",
+    "price": "MKD1,800",
+    "image": "images/catalog/libre_yes-saint-laurent3.webp"
+  },
+  {
+    "id": 82,
+    "name": "Versace - Eros",
+    "price": "MKD1,800",
+    "image": "images/catalog/versace_eros.webp"
+  },
+  {
+    "id": 83,
+    "name": "Versace - Eros Energy",
+    "price": "MKD1,800",
+    "image": "images/catalog/versace_eros-energy.webp"
+  },
+  {
+    "id": 84,
+    "name": "Versace - Dylan Blue Pour Femme",
+    "price": "MKD1,800",
+    "image": "images/catalog/versace-pour-femme_dyaln-blue.webp"
+  },
+  {
+    "id": 85,
+    "name": "Versace - Dylan Blue Pour Homme",
+    "price": "MKD1,800",
+    "image": "images/catalog/versace-pour-homme_dylan-blue.webp"
+  },
+  {
+    "id": 86,
+    "name": "Dolce & Gabbana - The One",
+    "price": "MKD1,800",
+    "image": "images/catalog/dolce-and-gabban_the-one.webp"
+  },
+  {
+    "id": 87,
+    "name": "Dolce & Gabbana - The One",
+    "price": "MKD1,800",
+    "image": "images/catalog/dolce-and-gabban_the-one2.webp"
   }
 ]
