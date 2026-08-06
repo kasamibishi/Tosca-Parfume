@@ -210,3 +210,36 @@ window.addEventListener('load', hideLoader);
 setTimeout(hideLoader, 3000); 
 
 loadCatalog();
+
+// --- Unbreakable Menu Category & Brand Filtering ---
+const filterLinks = document.querySelectorAll('.filter-link');
+
+filterLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    
+    // Get the exact filter keyword from the HTML (e.g., 'unisex', 'tom ford')
+    const filterValue = e.target.getAttribute('data-filter').toLowerCase();
+    
+    // Close the menu overlay
+    closeMenu();
+    
+    // Filter the catalog using strict database properties
+    const filteredCatalog = catalogData.filter(item => {
+      // Defensive coding: Check if brand/gender exist on the object to prevent app crashes
+      const itemBrand = item.brand ? item.brand.toLowerCase() : "";
+      const itemGender = item.gender ? item.gender.toLowerCase() : "";
+      
+      // Match if the filter value equals either the brand or the gender
+      return itemBrand === filterValue || itemGender === filterValue;
+    });
+
+    // Clear search bar to prevent UI/UX confusion
+    if (searchBar) {
+      searchBar.value = '';
+    }
+    
+    // Render the final results
+    renderCatalog(filteredCatalog);
+  });
+});
