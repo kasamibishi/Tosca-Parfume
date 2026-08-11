@@ -18,54 +18,68 @@
     <img src="images/h-logo.png" alt="Tosca Parfume" class="loader-logo">
   </div>
 
-  <!--Header-->
-  <div id="header">
-    <div id="l-header">
-      <img src="images/menu_icon.png" alt="" id="menu-icon">
-    </div>
-
-    <div id="c-header" class="lang-switcher">
-      <button class="lang-btn" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="sq">AL</button>
-      <button class="lang-btn" data-lang="mk">MK</button>
-    </div>
-
-    <div id="r-header">
-      <img src="images/h-logo.png" alt="" id="h-logo">
-    </div>
+  <header id="header">
+  <img src="images/h-logo.png" alt="Tosca Parfume" id="h-logo">
+  
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="sq">AL</button>
+    <button class="lang-btn" data-lang="mk">MK</button>
   </div>
-
-  <!-- Menu -->
-  <nav id="mobile-menu" class="hidden-menu">
-    <div class="menu-header">
-      <img src="images/h-logo.png" alt="Tosca Parfume" class="menu-logo">
-      <button id="close-menu">&times;</button>
-    </div>
-    
-    <ul class="menu-links">
-      <li class="menu-section">Categories</li>
-      <li><a href="#" class="filter-link" data-filter="burra">Perfumes for Men</a></li>
-      <li><a href="#" class="filter-link" data-filter="gra">Perumes for Women</a></li>
-      <li><a href="#" class="filter-link" data-filter="unisex">Unisex</a></li>
-      
-      <li class="menu-section">Contact</li>
-      <li><a href="https://wa.me/38978204889" target="_blank">WhatsApp</a></li>
-    </ul>
-
-    <footer id="footer">
-      <p>&copy; 2026 Tosca Parfume. All rights reserved.<br>
-        Website built by <a href="https://www.instagram.com/kasio_it/" target="_blank" rel="noopener noreferrer" class="agency-link">Kasio IT</a></p>
-    </footer>
-  </nav>
-  
-  
-  <div id="menu-overlay"></div>
+</header>
   
   <!--Banner-->
   <img src="images/banner.webp" alt="" id="banner">
 
   <!--Search Bar-->
   <input type="text" id="search-bar" placeholder="Search perfumes and brands">
+
+  <!-- Filter -->
+  <div id="quick-filters-container">
+    <button class="filter-pill active" data-key="gender" data-value="all">All</button>
+    <button class="filter-pill" data-key="gender" data-value="burra">Men</button>
+    <button class="filter-pill" data-key="gender" data-value="gra">Women</button>
+    <button class="filter-pill" data-key="gender" data-value="unisex">Unisex</button>
+    <button id="btn-open-filters" class="filter-pill advanced-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+      Filters
+    </button>
+  </div>
+
+  <!-- Advanced Filter Bottom Sheet -->
+  <div id="filter-overlay" class="hidden"></div>
+  <div id="advanced-filters" class="bottom-sheet hidden">
+    <div class="sheet-header">
+      <h3>Advanced Filters</h3>
+      <button id="btn-close-filters">&times;</button>
+    </div>
+    
+    <div class="sheet-body">
+      <!-- Brand Filter -->
+      <div class="filter-group">
+        <label>Brand</label>
+        <select id="brand-select">
+          <option value="all">All Brands</option>
+          <option value="tom ford">Tom Ford</option>
+          <option value="xerjoff">Xerjoff</option>
+          <option value="giorgio armani">Giorgio Armani</option>
+          <option value="jean paul gaultier">Jean Paul Gaultier</option>
+          <!-- Add rest of brands here -->
+        </select>
+      </div>
+
+      <!-- Price Filter -->
+      <div class="filter-group">
+        <label>Max Price: <span id="price-display">MKD 4500</span></label>
+        <!-- Range: 1600 to 4500 based on your current catalog -->
+        <input type="range" id="price-slider" min="1600" max="4500" step="100" value="4500">
+      </div>
+    </div>
+    
+    <div class="sheet-footer">
+      <button id="btn-apply-filters" class="btn-primary">Apply Filters</button>
+    </div>
+  </div>
 
   <!--Catalog-->
   <div id="catalog">

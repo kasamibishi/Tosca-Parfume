@@ -4,10 +4,6 @@ const waNumber = "38978204889";
 
 let catalogData = [];
 
-const menuIcon = document.getElementById('menu-icon');
-const mobileMenu = document.getElementById('mobile-menu');
-const closeMenuBtn = document.getElementById('close-menu');
-const menuOverlay = document.getElementById('menu-overlay');
 const scrollTopBtn = document.getElementById('scroll-top-btn');
 const loader = document.getElementById('page-loader');
 
@@ -55,37 +51,109 @@ async function loadCatalog() {
   }
 }
 
+// 1. Centralized State Object
+const filterState = {
+  search: '',
+  gender: 'all',
+  brand: 'all',
+  maxPrice: 4500
+};
+
+// 2. The Core Filtering Engine
+function applyAllFilters() {
+  const filtered = catalogData.filter(item => {
+    // Data Normalization: Extract numerical price from string "MKD1,600"
+    const rawPriceStr = item.price.replace(/[^\d]/g, ''); 
+    const priceNum = parseInt(rawPriceStr, 10);
+    
+    // Data Fallback: If you haven't added "brand" to JSON yet, extract it from name
+    const itemBrand = item.brand ? item.brand.toLowerCase() : item.name.split(' - ')[0].toLowerCase();
+
+    // Condition Checks
+    const matchesSearch = filterState.search === '' || normalizeString(item.name).includes(filterState.search);
+    const matchesGender = filterState.gender === 'all' || item.gender === filterState.gender;
+    const matchesBrand = filterState.brand === 'all' || itemBrand.includes(filterState.brand);
+    const matchesPrice = priceNum <= filterState.maxPrice;
+
+    // Must pass ALL conditions to be rendered
+    return matchesSearch && matchesGender && matchesBrand && matchesPrice;
+  });
+
+  renderCatalog(filtered);
+}
+
+// 3. Search Bar Event (Debounced to protect CPU)
+let searchTimeout;
 if (searchBar) {
   searchBar.addEventListener('input', (e) => {
-    const searchTerm = normalizeString(e.target.value);
-    
-    const filteredCatalog = catalogData.filter(item => {
-      const normalizedProductName = normalizeString(item.name);
-      return normalizedProductName.includes(searchTerm);
-    });
-
-    renderCatalog(filteredCatalog);
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      filterState.search = normalizeString(e.target.value);
+      applyAllFilters();
+    }, 300); // Waits 300ms after typing stops before rendering
   });
 }
 
-function closeMenu() {
-  if (mobileMenu && menuOverlay) {
-    mobileMenu.classList.remove('open-menu');
-    menuOverlay.classList.remove('active');
-    document.body.style.overflow = 'auto';
+// 4. Quick Filter Pills Event
+const filterPills = document.querySelectorAll('#quick-filters-container .filter-pill[data-key="gender"]');
+filterPills.forEach(pill => {
+  pill.addEventListener('click', (e) => {
+    // Update UI
+    filterPills.forEach(p => p.classList.remove('active'));
+    e.target.classList.add('active');
+    
+    // Update State & Re-render
+    filterState.gender = e.target.getAttribute('data-value');
+    applyAllFilters();
+  });
+});
+
+// 5. Bottom Sheet UI Management
+const btnOpenFilters = document.getElementById('btn-open-filters');
+const btnCloseFilters = document.getElementById('btn-close-filters');
+const filterOverlay = document.getElementById('filter-overlay');
+const advancedFiltersSheet = document.getElementById('advanced-filters');
+const priceSlider = document.getElementById('price-slider');
+const priceDisplay = document.getElementById('price-display');
+const brandSelect = document.getElementById('brand-select');
+const btnApplyFilters = document.getElementById('btn-apply-filters');
+
+function toggleSheet(show) {
+  if (show) {
+    filterOverlay.classList.remove('hidden');
+    advancedFiltersSheet.classList.remove('hidden');
+    // small delay to allow display:block to apply before animating transform
+    setTimeout(() => {
+      filterOverlay.classList.add('active');
+      advancedFiltersSheet.classList.add('open');
+    }, 10);
+  } else {
+    filterOverlay.classList.remove('active');
+    advancedFiltersSheet.classList.remove('open');
+    setTimeout(() => {
+      filterOverlay.classList.add('hidden');
+      advancedFiltersSheet.classList.add('hidden');
+    }, 300); // Matches transition duration
   }
 }
 
-if (menuIcon && mobileMenu && menuOverlay) {
-  menuIcon.addEventListener('click', () => {
-    mobileMenu.classList.add('open-menu');
-    menuOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  });
+btnOpenFilters.addEventListener('click', () => toggleSheet(true));
+btnCloseFilters.addEventListener('click', () => toggleSheet(false));
+filterOverlay.addEventListener('click', () => toggleSheet(false));
+
+// Update price display dynamically as user drags slider
+priceSlider.addEventListener('input', (e) => {
+  priceDisplay.textContent = `MKD ${e.target.value}`;
+});
+
+// 6. Apply Advanced Filters
+btnApplyFilters.addEventListener('click', () => {
+  filterState.brand = brandSelect.value;
+  filterState.maxPrice = parseInt(priceSlider.value, 10);
   
-  if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
-  menuOverlay.addEventListener('click', closeMenu);
-}
+  applyAllFilters();
+  toggleSheet(false);
+});
 
 if (scrollTopBtn) {
   window.addEventListener('scroll', () => {
@@ -152,16 +220,8 @@ function applyTranslation() {
     }
   });
 
-  // Re-render the catalog so the buttons and WhatsApp links update
   if (catalogData.length > 0) {
-    // If there is an active search, respect it during re-render
-    const searchTerm = normalizeString(searchBar ? searchBar.value : '');
-    if (searchTerm) {
-      const filtered = catalogData.filter(item => normalizeString(item.name).includes(searchTerm));
-      renderCatalog(filtered);
-    } else {
-      renderCatalog(catalogData);
-    }
+    applyAllFilters();
   }
 }
 
@@ -210,36 +270,3 @@ window.addEventListener('load', hideLoader);
 setTimeout(hideLoader, 3000); 
 
 loadCatalog();
-
-// --- Unbreakable Menu Category & Brand Filtering ---
-const filterLinks = document.querySelectorAll('.filter-link');
-
-filterLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault(); 
-    
-    // Get the exact filter keyword from the HTML (e.g., 'unisex', 'tom ford')
-    const filterValue = e.target.getAttribute('data-filter').toLowerCase();
-    
-    // Close the menu overlay
-    closeMenu();
-    
-    // Filter the catalog using strict database properties
-    const filteredCatalog = catalogData.filter(item => {
-      // Defensive coding: Check if brand/gender exist on the object to prevent app crashes
-      const itemBrand = item.brand ? item.brand.toLowerCase() : "";
-      const itemGender = item.gender ? item.gender.toLowerCase() : "";
-      
-      // Match if the filter value equals either the brand or the gender
-      return itemBrand === filterValue || itemGender === filterValue;
-    });
-
-    // Clear search bar to prevent UI/UX confusion
-    if (searchBar) {
-      searchBar.value = '';
-    }
-    
-    // Render the final results
-    renderCatalog(filteredCatalog);
-  });
-});
