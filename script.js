@@ -59,20 +59,68 @@ const filterState = {
   maxPrice: 4500
 };
 
+// Function to dynamically build the brand dropdown
+function populateBrandDropdown() {
+  const brandSelect = document.getElementById('brand-select');
+  if (!brandSelect) return;
+
+  const uniqueBrands = new Set();
+
+  catalogData.forEach(item => {
+    // Strict data enforcement: If brand doesn't exist, flag it as 'Unknown'
+    const brandName = item.brand ? item.brand.trim() : 'Unknown';
+    uniqueBrands.add(brandName);
+  });
+
+  // Remove 'Unknown' from the filter list if it exists, so clients don't see your data entry errors
+  uniqueBrands.delete('Unknown');
+
+  const sortedBrands = Array.from(uniqueBrands).sort();
+
+  brandSelect.innerHTML = '<option value="all">All Brands</option>'; 
+  
+  sortedBrands.forEach(brand => {
+    const option = document.createElement('option');
+    option.value = brand.toLowerCase();
+    option.textContent = brand;
+    brandSelect.appendChild(option);
+  });
+}
+
 // 2. The Core Filtering Engine
 function applyAllFilters() {
   const filtered = catalogData.filter(item => {
-    // Data Normalization: Extract numerical price from string "MKD1,600"
+    // 1. Data Normalization: Extract numerical price (THIS IS WHAT YOU DELETED)
     const rawPriceStr = item.price.replace(/[^\d]/g, ''); 
     const priceNum = parseInt(rawPriceStr, 10);
     
-    // Data Fallback: If you haven't added "brand" to JSON yet, extract it from name
-    const itemBrand = item.brand ? item.brand.toLowerCase() : item.name.split(' - ')[0].toLowerCase();
+    // 2. Strict Brand Check: Now pulling from your clean, normalized JSON
+    const itemBrand = item.brand ? item.brand.toLowerCase() : "";
 
-    // Condition Checks
+    // 3. Condition Checks
     const matchesSearch = filterState.search === '' || normalizeString(item.name).includes(filterState.search);
     const matchesGender = filterState.gender === 'all' || item.gender === filterState.gender;
-    const matchesBrand = filterState.brand === 'all' || itemBrand.includes(filterState.brand);
+    const matchesBrand = filterState.brand === 'all' || itemBrand === filterState.brand; 
+    const matchesPrice = priceNum <= filterState.maxPrice;
+
+    // Must pass ALL conditions to be rendered
+    return matchesSearch && matchesGender && matchesBrand && matchesPrice;
+  });
+
+  renderCatalog(filtered);
+}function applyAllFilters() {
+  const filtered = catalogData.filter(item => {
+    // 1. Data Normalization: Extract numerical price (THIS IS WHAT YOU DELETED)
+    const rawPriceStr = item.price.replace(/[^\d]/g, ''); 
+    const priceNum = parseInt(rawPriceStr, 10);
+    
+    // 2. Strict Brand Check: Now pulling from your clean, normalized JSON
+    const itemBrand = item.brand ? item.brand.toLowerCase() : "";
+
+    // 3. Condition Checks
+    const matchesSearch = filterState.search === '' || normalizeString(item.name).includes(filterState.search);
+    const matchesGender = filterState.gender === 'all' || item.gender === filterState.gender;
+    const matchesBrand = filterState.brand === 'all' || itemBrand === filterState.brand; 
     const matchesPrice = priceNum <= filterState.maxPrice;
 
     // Must pass ALL conditions to be rendered
@@ -270,3 +318,22 @@ window.addEventListener('load', hideLoader);
 setTimeout(hideLoader, 3000); 
 
 loadCatalog();
+
+async function loadCatalog() {
+  try {
+    const response = await fetch('catalog.json');
+    if (!response.ok) throw new Error('Failed to load catalog data');
+    
+    catalogData = await response.json(); 
+    
+    // BUILD THE DROPDOWN AUTOMATICALLY HERE
+    populateBrandDropdown(); 
+    
+    renderCatalog(catalogData); 
+  } catch (error) {
+    console.error("Data load error:", error);
+    if (catalogContainer) {
+      catalogContainer.innerHTML = '<p class="error" style="text-align: center; color: red;">Failed to load the catalog. Please refresh.</p>';
+    }
+  }
+}

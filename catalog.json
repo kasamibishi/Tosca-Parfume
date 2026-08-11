@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Stronger With You - Absolutely",
+    "brand": "Emporio Armani",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/stronger-with-you_absolutely.webp"
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "name": "Stronger With You - Parfum",
+    "brand": "Emporio Armani",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/stronger-with-you_parfum.webp"
@@ -16,6 +18,7 @@
   {
     "id": 3,
     "name": "Stronger With You",
+    "brand": "Emporio Armani",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/stronger-with-you.webp"
@@ -23,6 +26,7 @@
   {
     "id": 4,
     "name": "Stronger With You - Intensely",
+    "brand": "Emporio Armani",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/stronger-with-you_intensely.webp"
@@ -30,6 +34,7 @@
   {
     "id": 5,
     "name": "Tom Ford - Oud Wood",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_oud-wood.webp"
@@ -37,6 +42,7 @@
   {
     "id": 6,
     "name": "Stronger With You - Amber",
+    "brand": "Emporio Armani",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/stronger-with-you-amber.webp"
@@ -44,6 +50,7 @@
   {
     "id": 7,
     "name": "Tom Ford - Fucking Fabulous",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_fucking-faulous.webp"
@@ -51,6 +58,7 @@
   {
     "id": 8,
     "name": "Tom Ford - Ombre Leather",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_ombre-leather.webp"
@@ -58,6 +66,7 @@
   {
     "id": 9,
     "name": "Tom Ford - Noir",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_noir.webp"
@@ -65,6 +74,7 @@
   {
     "id": 10,
     "name": "Tom Ford - Noir Extreme",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_noir-extreme.webp"
@@ -72,6 +82,7 @@
   {
     "id": 11,
     "name": "Tom Ford - Bitter Peach",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_bitter-peach.webp"
@@ -79,6 +90,7 @@
   {
     "id": 12,
     "name": "Tom Ford - Black Orchid",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_black-orchid.webp"
@@ -86,6 +98,7 @@
   {
     "id": 13,
     "name": "Tom Ford - Tobacco Vanille",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_tobacco-vanille.webp"
@@ -93,6 +106,7 @@
   {
     "id": 14,
     "name": "Tom Ford - Lost Cherry",
+    "brand": "Tom Ford",
     "gender": "unisex",
     "price": "MKD1,800",
     "image": "images/catalog/tom-ford_lost-cherry.webp"
@@ -100,6 +114,7 @@
   {
     "id": 15,
     "name": "Dior Sauvage - Elixir",
+    "brand": "Dior",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/dior-sauvage_elixir.webp"
@@ -107,6 +122,7 @@
   {
     "id": 16,
     "name": "Dior Sauvage - Eau De Parfum",
+    "brand": "Dior",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/dior-sauvage_eau-de-parfum.webp"
@@ -114,6 +130,7 @@
   {
     "id": 17,
     "name": "Dior Sauvage - Eau Forte",
+    "brand": "Dior",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/dior-sauvage_eau-forte.webp"
@@ -121,6 +138,7 @@
   {
     "id": 18,
     "name": "Xejroff - Naxos",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff-naxos.webp"
@@ -128,6 +146,7 @@
   {
     "id": 19,
     "name": "Xerjoff - Opera",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff-opera.webp"
@@ -135,6 +154,7 @@
   {
     "id": 20,
     "name": "Xerjoff - Tomy Iommi",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_tomy-iommi.webp"
@@ -142,6 +162,7 @@
   {
     "id": 21,
     "name": "Xerjoff - Perseveranza",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_perseveranza.webp"
@@ -149,6 +170,7 @@
   {
     "id": 22,
     "name": "Xerjoff - Avanguardia",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_avanguardia.webp"
@@ -156,6 +178,7 @@
   {
     "id": 23,
     "name": "Xerjoff - Fierezza",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_fierezza.webp"
@@ -163,6 +186,7 @@
   {
     "id": 24,
     "name": "Xerjoff - Accento",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_accento.webp"
@@ -170,6 +194,7 @@
   {
     "id": 25,
     "name": "Xerjoff - Laylati",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_laylati.webp"
@@ -177,6 +202,7 @@
   {
     "id": 26,
     "name": "Xerjoff - Purple Accento",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD3,000",
     "image": "images/catalog/xerjoff_purple-accento.webp"
@@ -184,6 +210,7 @@
   {
     "id": 27,
     "name": "Xerjoff",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff.webp"
@@ -191,6 +218,7 @@
   {
     "id": 28,
     "name": "Xerjoff - Erba Gold",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_erba-gold.webp"
@@ -198,6 +226,7 @@
   {
     "id": 29,
     "name": "Xerjoff - Erba Pura",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_erba-pura.webp"
@@ -205,6 +234,7 @@
   {
     "id": 30,
     "name": "Xerjoff - II",
+    "brand": "Xerjoff",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/xerjoff_2.webp"
@@ -212,6 +242,7 @@
   {
     "id": 31,
     "name": "Mansion Francis Kurkdjian Paris - Oud",
+    "brand": "Maison Francis Kurkdjian",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/mansion-francis-kurkdjian-paris_oud.webp"
@@ -219,6 +250,7 @@
   {
     "id": 32,
     "name": "Mansion Francis Kurkdjian Paris - Baccarat",
+    "brand": "Maison Francis Kurkdjian",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat.webp"
@@ -226,6 +258,7 @@
   {
     "id": 33,
     "name": "Mansion Francis Kurkdjian Paris - Grand Soir",
+    "brand": "Maison Francis Kurkdjian",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/mansion-francis-kurkdjian-paris_grand-soir.webp"
@@ -233,6 +266,7 @@
   {
     "id": 34,
     "name": "Mansion Francis Kurkdjian Paris - Baccarat Rouge 540",
+    "brand": "Maison Francis Kurkdjian",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat-540.webp"
@@ -240,6 +274,7 @@
   {
     "id": 35,
     "name": "Falcon Leather - Matiere Premiere",
+    "brand": "Matiere Premiere",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/falcon-leather_matiere-premiere.webp"
@@ -247,6 +282,7 @@
   {
     "id": 36,
     "name": "Vanilla Powder - Matiere Premiere",
+    "brand": "Matiere Premiere",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/vanilla-powder_matiere-premiere.webp"
@@ -254,6 +290,7 @@
   {
     "id": 37,
     "name": "Vanilla Powder Extraint De Parfum - Matiere Premiere",
+    "brand": "Matiere Premiere",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/vanilla-powder-extraint-de-parfum_matiere-premiere.webp"
@@ -261,6 +298,7 @@
   {
     "id": 38,
     "name": "Iris Absolu - Lancome",
+    "brand": "Lancome",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/la-vie-est-belle-iris-absolu_lancome.webp"
@@ -268,6 +306,7 @@
   {
     "id": 39,
     "name": "L'eau De Parfum",
+    "brand": "Lancome",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/leau-de-parfum_lancome.webp"
@@ -275,6 +314,7 @@
   {
     "id": 40,
     "name": "N5 - Chanel",
+    "brand": "Chanel",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/n5_chanel.webp"
@@ -282,6 +322,7 @@
   {
     "id": 41,
     "name": "Coco Mademoiselle -Chanel",
+    "brand": "Chanel",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/coco-mademoiselle_chanel.webp"
@@ -289,6 +330,7 @@
   {
     "id": 42,
     "name": "Hypnotic Posion - Dior",
+    "brand": "Dior",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/hypnotic-posion_dior.webp"
@@ -296,6 +338,7 @@
   {
     "id": 43,
     "name": "Jadore - Dior",
+    "brand": "Dior",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/jadore-dior.webp"
@@ -303,6 +346,7 @@
   {
     "id": 44,
     "name": "Gucci Guilty - Pour Femme",
+    "brand": "Gucci",
     "gender": "gra",
     "price": "MKD1,600",
     "image": "images/catalog/gucci_guilty.webp"
@@ -310,6 +354,7 @@
   {
     "id": 45,
     "name": "Gucci Flora - Gorgeous Orchid",
+    "brand": "Gucci",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/guxxi-flora.webp"
@@ -317,6 +362,7 @@
   {
     "id": 46,
     "name": "Gucci Flora - Gorgeous Magenta",
+    "brand": "Gucci",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/gucci-flora_gorgeous-magenta.webp"
@@ -324,6 +370,7 @@
   {
     "id": 47,
     "name": "Gucci Flora - Gorgeous Gardenia",
+    "brand": "Gucci",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/gucci-flora_gorgeous-gardenia.webp"
@@ -331,6 +378,7 @@
   {
     "id": 48,
     "name": "Gucci Guilty - Pour Homme",
+    "brand": "Gucci",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/gucci-guilty_pour-homme.webp"
@@ -338,6 +386,7 @@
   {
     "id": 49,
     "name": "Gucci Guilty - Absolu De Parfum Pour Femme",
+    "brand": "Gucci",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/gucci-guilty_absolu-de-parfum_pour-feme.webp"
@@ -345,6 +394,7 @@
   {
     "id": 50,
     "name": "Maison Crivelli - Patchouli Magnetik",
+    "brand": "Maison Crivelli",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/maison-crivelli_patchouli-magentik.webp"
@@ -352,6 +402,7 @@
   {
     "id": 51,
     "name": "Maison Crivelli - Oud Maracula",
+    "brand": "Maison Crivelli",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/maison-crivelli_oud-maracula.webp"
@@ -359,6 +410,7 @@
   {
     "id": 52,
     "name": "Maison Crivelli - Hiboscus Mahalad",
+    "brand": "Maison Crivelli",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/maison-crivelli_hiboscus-mahalad.webp"
@@ -366,6 +418,7 @@
   {
     "id": 53,
     "name": "Scandal Intense - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal-intense_jean-paul-gaultier.webp"
@@ -373,6 +426,7 @@
   {
     "id": 54,
     "name": "Scandal Intense - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal-intense_jean-paul-gaultier2.webp"
@@ -380,6 +434,7 @@
   {
     "id": 55,
     "name": "Scandal - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal_jean-paul-gaultier.webp"
@@ -387,6 +442,7 @@
   {
     "id": 56,
     "name": "Scandal Absolu - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal-absolu_jean-paul-gaultier.webp"
@@ -394,6 +450,7 @@
   {
     "id": 57,
     "name": "Scandal - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal_jean-paul-gaultier2.webp"
@@ -401,6 +458,7 @@
   {
     "id": 58,
     "name": "Scandal Le Parfum - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal-le-parfum_jean-paul-gaultier.webp"
@@ -408,6 +466,7 @@
   {
     "id": 59,
     "name": "Scandal Le Parfum - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/scandal_jean-paul-gaultier2.webp"
@@ -415,6 +474,7 @@
   {
     "id": 60,
     "name": "Le Beau - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "burra",
     "price": "MKD2,000",
     "image": "images/catalog/le-beau_jean-paul-gaultier.webp"
@@ -422,6 +482,7 @@
   {
     "id": 61,
     "name": "Paradise Garden - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "burra",
     "price": "MKD2,000",
     "image": "images/catalog/paradise-garden_jean-paul-gaultier.webp"
@@ -429,6 +490,7 @@
   {
     "id": 62,
     "name": "Le Male - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "burra",
     "price": "MKD2,000",
     "image": "images/catalog/le-male_jean-paul-gaultier.webp"
@@ -436,6 +498,7 @@
   {
     "id": 63,
     "name": "Ultra Male - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "burra",
     "price": "MKD2,000",
     "image": "images/catalog/ultra-male_jean-paul-gaultier.webp"
@@ -443,6 +506,7 @@
   {
     "id": 64,
     "name": "Le Male Elixir Absolu- Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "burra",
     "price": "MKD2,000",
     "image": "images/catalog/le-male-elixir-absolu_jean-paul-gaultier.webp"
@@ -450,6 +514,7 @@
   {
     "id": 65,
     "name": "Le Male Elixir - Jean Paul Gaultier",
+    "brand": "Jean Paul Gaultier",
     "gender": "burra",
     "price": "MKD2,000",
     "image": "images/catalog/le-male-elixir_jean-paul-gaultier.webp"
@@ -457,6 +522,7 @@
   {
     "id": 66,
     "name": "My Way - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/my-way_giorgio-armani.webp"
@@ -464,6 +530,7 @@
   {
     "id": 67,
     "name": "My Way Nectar - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/my-way-nectar_girogio-armani.webp"
@@ -471,6 +538,7 @@
   {
     "id": 68,
     "name": "Her - Burberry",
+    "brand": "Burberry",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/her-burberry.webp"
@@ -478,6 +546,7 @@
   {
     "id": 69,
     "name": "Her Elixir - Burberry",
+    "brand": "Burberry",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/her-elixir_burberry.webp"
@@ -485,6 +554,7 @@
   {
     "id": 70,
     "name": "Paradoxe - Prada",
+    "brand": "Prada",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/paradoxe_prada.webp"
@@ -492,6 +562,7 @@
   {
     "id": 71,
     "name": "Goddess - Burberry",
+    "brand": "Burberry",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/goddess_burberry.webp"
@@ -499,6 +570,7 @@
   {
     "id": 72,
     "name": "Dolce & Gabbana - Devotion",
+    "brand": "Dolce & Gabbana",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/dolce-and-gabban_devotion.webp"
@@ -506,6 +578,7 @@
   {
     "id": 73,
     "name": "Power of You - Emporio Armani",
+    "brand": "Emporio Armani",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/power-of-you_emporio-armani.webp"
@@ -513,6 +586,7 @@
   {
     "id": 74,
     "name": "Valentino - Donna",
+    "brand": "Valentino",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/valentino_donna.webp"
@@ -520,6 +594,7 @@
   {
     "id": 75,
     "name": "Voce Viva - Valentino",
+    "brand": "Valentino",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/voce-viva_valentino.webp"
@@ -527,6 +602,7 @@
   {
     "id": 76,
     "name": "Libre Vanille Couture - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/libre-vanille-coutre_yes-saint-laurent.webp"
@@ -534,6 +610,7 @@
   {
     "id": 77,
     "name": "Libre - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/libre_yes-saint-laurent.webp"
@@ -541,6 +618,7 @@
   {
     "id": 78,
     "name": "Libre Berry Crush - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/libre-berry-crush_yes-saint-laurent.webp"
@@ -548,6 +626,7 @@
   {
     "id": 79,
     "name": "Versace - Eros Najim",
+    "brand": "Versace",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/versace_eros-najim.webp"
@@ -555,6 +634,7 @@
   {
     "id": 80,
     "name": "Libre - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/libre_yes-saint-laurent2.webp"
@@ -562,6 +642,7 @@
   {
     "id": 81,
     "name": "Libre - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/libre_yes-saint-laurent3.webp"
@@ -569,6 +650,7 @@
   {
     "id": 82,
     "name": "Versace - Eros",
+    "brand": "Versace",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/versace_eros.webp"
@@ -576,6 +658,7 @@
   {
     "id": 83,
     "name": "Versace - Eros Energy",
+    "brand": "Versace",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/versace_eros-energy.webp"
@@ -583,6 +666,7 @@
   {
     "id": 84,
     "name": "Versace - Dylan Blue Pour Femme",
+    "brand": "Versace",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/versace-pour-femme_dyaln-blue.webp"
@@ -590,6 +674,7 @@
   {
     "id": 85,
     "name": "Versace - Dylan Blue Pour Homme",
+    "brand": "Versace",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/versace-pour-homme_dylan-blue.webp"
@@ -597,6 +682,7 @@
   {
     "id": 86,
     "name": "Dolce & Gabbana - The One",
+    "brand": "Dolce & Gabbana",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/dolce-and-gabban_the-one.webp"
@@ -604,6 +690,7 @@
   {
     "id": 87,
     "name": "Dolce & Gabbana - The One",
+    "brand": "Dolce & Gabbana",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/dolce-and-gabban_the-one2.webp"
@@ -611,6 +698,7 @@
   {
     "id": 88,
     "name": "Pur Oud - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/pur-oud_louis-vitton.webp"
@@ -618,6 +706,7 @@
   {
     "id": 89,
     "name": "California Dream - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/california-dream_louis-vuitton.webp"
@@ -625,6 +714,7 @@
   {
     "id": 90,
     "name": "Afternoon Swim - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/afternoon-swin_louis-vuitton.webp"
@@ -632,6 +722,7 @@
   {
     "id": 91,
     "name": "Ombre Nomade - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/ombre-nomade_louis-vuitton.webp"
@@ -639,6 +730,7 @@
   {
     "id": 92,
     "name": "Meteore - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/meteore_louis-vuitton.webp"
@@ -646,6 +738,7 @@
   {
     "id": 93,
     "name": "Imagination - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/imagination_louis-vuitton.webp"
@@ -653,6 +746,7 @@
   {
     "id": 94,
     "name": "Pacific Chill - Louis Vuitton",
+    "brand": "Louis Vuitton",
     "gender": "unisex",
     "price": "MKD2,500",
     "image": "images/catalog/pacific-chill_louis-vuitton.webp"
@@ -660,6 +754,7 @@
   {
     "id": 95,
     "name": "Very Good Girl - Carolina Herrera",
+    "brand": "Carolina Herrera",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/very-good-girl_carolina-herrera.webp"
@@ -667,6 +762,7 @@
   {
     "id": 96,
     "name": "Good Girl Blush - Carolina Herrera",
+    "brand": "Carolina Herrera",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/good-girl-blush_carolina-herrera.webp"
@@ -674,6 +770,7 @@
   {
     "id": 97,
     "name": "Good Girl - Carolina Herrera",
+    "brand": "Carolina Herrera",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/good-girl_carolina-herrera2.webp"
@@ -681,6 +778,7 @@
   {
     "id": 98,
     "name": "Good Girl - Carolina Herrera",
+    "brand": "Carolina Herrera",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/good-girl_carolina-herrera3.webp"
@@ -688,6 +786,7 @@
   {
     "id": 99,
     "name": "Good Girl - Carolina Herrera",
+    "brand": "Carolina Herrera",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/good-girl_carolina-herrera4.webp"
@@ -695,6 +794,7 @@
   {
     "id": 100,
     "name": "Black Afgano - Nasomatto",
+    "brand": "Nasomatto",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/black-afgano_nasomatto.webp"
@@ -702,6 +802,7 @@
   {
     "id": 101,
     "name": "Oud For Happiness - Initio",
+    "brand": "Initio",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/oud-for-happiness_initio.webp"
@@ -709,6 +810,7 @@
   {
     "id": 102,
     "name": "Side Effect - Initio",
+    "brand": "Initio",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/side-effect_initio.webp"
@@ -716,6 +818,7 @@
   {
     "id": 103,
     "name": "Eau De Parfum - Initio",
+    "brand": "Initio",
     "gender": "unisex",
     "price": "MKD2,000",
     "image": "images/catalog/eau-de-parfum_initio.webp"
@@ -723,6 +826,7 @@
   {
     "id": 104,
     "name": "Eau De Toilette - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/eau-de-toilette_yes-saint-laurent.webp"
@@ -730,6 +834,7 @@
   {
     "id": 105,
     "name": "Eau De Parfum Intense - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/eau-de-parfum-intense_yes-saint-laurent.webp"
@@ -737,6 +842,7 @@
   {
     "id": 106,
     "name": "Eau Fraiche - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/eau-fraiche_yes-saint-laurent.webp"
@@ -744,6 +850,7 @@
   {
     "id": 107,
     "name": "Eau De Parfum - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/eau-de-parfum_yes-saint-laurent.webp"
@@ -751,6 +858,7 @@
   {
     "id": 108,
     "name": "Lanuit De L'Homme - Yes Saint Laurent",
+    "brand": "Yves Saint Laurent",
     "gender": "burra",
     "price": "MKD1,600",
     "image": "images/catalog/lanuit-de-lhomme_yes-saint-laurent.webp"
@@ -758,6 +866,7 @@
   {
     "id": 109,
     "name": "Armani Code - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/armani-code_giorgio-armani.webp"
@@ -765,6 +874,7 @@
   {
     "id": 110,
     "name": "Armani Code Profumo - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/armani-code-profumo_giorgio-armani.webp"
@@ -772,6 +882,7 @@
   {
     "id": 111,
     "name": "Aqua Di Gio Profondo - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/acqua-di-gio-profondo_giorgio-armani.webp"
@@ -779,6 +890,7 @@
   {
     "id": 112,
     "name": "Aqua Di Gio Absolu - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/acqua-di-gio-absolu_giorgio-armani.webp"
@@ -786,6 +898,7 @@
   {
     "id": 113,
     "name": "Aqua Di Gio Pour Homme - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/acqua-di-gio-pour-homme_giorgio-armani.webp"
@@ -793,13 +906,15 @@
   {
     "id": 114,
     "name": "Aqua Di Gio Profumo Parfum - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "burra",
-    "price": "MKD1,800",  
+    "price": "MKD1,800",
     "image": "images/catalog/acqua-di-gio-profumo-parfum_giorgio-armani.webp"
   },
   {
     "id": 115,
     "name": "Eros Flame - Versace",
+    "brand": "Versace",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/eros-flame-eau-de-parfum_versace.webp"
@@ -807,6 +922,7 @@
   {
     "id": 116,
     "name": "Krike - Tiziana Terenzi",
+    "brand": "Tiziana Terenzi",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/krike_tiziana-terenzi.webp"
@@ -814,6 +930,7 @@
   {
     "id": 117,
     "name": "Milano - L'Homme Prada",
+    "brand": "Prada",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/milano-lhomme-prada.webp"
@@ -821,6 +938,7 @@
   {
     "id": 118,
     "name": "Milano Paradigme - Prada",
+    "brand": "Prada",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/milano-paradigme_prada.webp"
@@ -828,6 +946,7 @@
   {
     "id": 119,
     "name": "Ocean - L'Homme Prada",
+    "brand": "Prada",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/ocean_prada.webp"
@@ -835,6 +954,7 @@
   {
     "id": 120,
     "name": "Phantom - Paco Rabanne",
+    "brand": "Paco Rabanne",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/phantom_paco-rabanne.webp"
@@ -842,6 +962,7 @@
   {
     "id": 121,
     "name": "Fame - Paco Rabanne",
+    "brand": "Paco Rabanne",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/fame_paco-rabanne.webp"
@@ -849,6 +970,7 @@
   {
     "id": 122,
     "name": "Si - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/si_giorgio-armani.webp"
@@ -856,6 +978,7 @@
   {
     "id": 123,
     "name": "Eau De Parfum - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/eau-de-parfum_girogio-armani.webp"
@@ -863,6 +986,7 @@
   {
     "id": 124,
     "name": "The Scent - Boss",
+    "brand": "Hugo Boss",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/the-scent_boss.webp"
@@ -870,6 +994,7 @@
   {
     "id": 125,
     "name": "Si Passione - Giorgio Armani",
+    "brand": "Giorgio Armani",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/si-passione_giorgio-armani.webp"
@@ -877,6 +1002,7 @@
   {
     "id": 126,
     "name": "The Scent Parfum - Boss",
+    "brand": "Hugo Boss",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/the-scent-parfum_boss.webp"
@@ -884,6 +1010,7 @@
   {
     "id": 127,
     "name": "The Scent For Her - Boss",
+    "brand": "Hugo Boss",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/the-scent-for-her_boss.webp"
@@ -891,6 +1018,7 @@
   {
     "id": 128,
     "name": "The Scent - Hugo Boss",
+    "brand": "Hugo Boss",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/the-scent_hugo-boss.webp"
@@ -898,6 +1026,7 @@
   {
     "id": 129,
     "name": "Black - My Burberry",
+    "brand": "Burberry",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/black_my-burberry.webp"
@@ -905,6 +1034,7 @@
   {
     "id": 130,
     "name": "Eau De Parfum - My Burberry",
+    "brand": "Burberry",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/eau-de-parfum_my-burberry.webp"
@@ -912,6 +1042,7 @@
   {
     "id": 131,
     "name": "Blush - My Burberry",
+    "brand": "Burberry",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/blush_my-burberry.webp"
@@ -919,6 +1050,7 @@
   {
     "id": 132,
     "name": "Mugler - Alien",
+    "brand": "Mugler",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/mugler_alien.webp"
@@ -926,6 +1058,7 @@
   {
     "id": 133,
     "name": "Decadence - Marc Jacobs",
+    "brand": "Marc Jacobs",
     "gender": "gra",
     "price": "MKD2,500",
     "image": "images/catalog/decadence_marc-jacobs.webp"
@@ -933,6 +1066,7 @@
   {
     "id": 134,
     "name": "Roses Musk - Montale Paris",
+    "brand": "Montale Paris",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/montale-paris_roses-musk.webp"
@@ -940,6 +1074,7 @@
   {
     "id": 135,
     "name": "Arabians - Montale Paris",
+    "brand": "Montale Paris",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/arabians_montale-paris.webp"
@@ -947,6 +1082,7 @@
   {
     "id": 136,
     "name": "Day Dreams - Montale Paris",
+    "brand": "Montale Paris",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/day-dreams_montale_paris.webp"
@@ -954,6 +1090,7 @@
   {
     "id": 137,
     "name": "Arabians Tonka - Montale Paris",
+    "brand": "Montale Paris",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/arabians-tonka_montale-paris.webp"
@@ -961,6 +1098,7 @@
   {
     "id": 138,
     "name": "Intense Cafe - Montale Paris",
+    "brand": "Montale Paris",
     "gender": "gra",
     "price": "MKD2,000",
     "image": "images/catalog/intense-cafe_montale-paris.webp"
@@ -968,6 +1106,7 @@
   {
     "id": 139,
     "name": "Back To Black- Kilian",
+    "brand": "Kilian",
     "gender": "unisex",
     "price": "MKD2,200",
     "image": "images/catalog/back-to-black_kilian.webp"
@@ -975,14 +1114,15 @@
   {
     "id": 140,
     "name": "Black Phantom - Kilian",
+    "brand": "Kilian",
     "gender": "unisex",
     "price": "MKD2,200",
     "image": "images/catalog/black-phantom_kilian.webp"
-  }
-  ,
+  },
   {
     "id": 141,
     "name": "Angels' Share - Kilian",
+    "brand": "Kilian",
     "gender": "unisex",
     "price": "MKD2,200",
     "image": "images/catalog/angels'share_kilian.webp"
@@ -990,6 +1130,7 @@
   {
     "id": 142,
     "name": "Toy Boy - Moschino",
+    "brand": "Moschino",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/toy-boy_moschino.webp"
@@ -997,6 +1138,7 @@
   {
     "id": 143,
     "name": "Guidance 46 - Amouage",
+    "brand": "Amouage",
     "gender": "unisex",
     "price": "MKD3,000",
     "image": "images/catalog/guidance-46_amouage.webp"
@@ -1004,6 +1146,7 @@
   {
     "id": 144,
     "name": "Guidance - Amouage",
+    "brand": "Amouage",
     "gender": "unisex",
     "price": "MKD3,000",
     "image": "images/catalog/guidance_amouage.webp"
@@ -1011,6 +1154,7 @@
   {
     "id": 145,
     "name": "Reasons - Amouage",
+    "brand": "Amouage",
     "gender": "unisex",
     "price": "MKD3,000",
     "image": "images/catalog/reasons-amouage.webp"
@@ -1018,6 +1162,7 @@
   {
     "id": 146,
     "name": "Outlands - Amouage",
+    "brand": "Amouage",
     "gender": "unisex",
     "price": "MKD3,000",
     "image": "images/catalog/outlands-amouage.webp"
@@ -1025,6 +1170,7 @@
   {
     "id": 147,
     "name": "Reflections - Amouage",
+    "brand": "Amouage",
     "gender": "unisex",
     "price": "MKD3,000",
     "image": "images/catalog/reflections_amouage.webp"
@@ -1032,6 +1178,7 @@
   {
     "id": 148,
     "name": "Tyl Assoluto - Tiziana Terenzi",
+    "brand": "Tiziana Terenzi",
     "gender": "unisex",
     "price": "MKD4,500",
     "image": "images/catalog/tyl-assoluto_tiziana-terenzi.webp"
@@ -1039,6 +1186,7 @@
   {
     "id": 149,
     "name": "Halley - Tiziana Terenzi",
+    "brand": "Tiziana Terenzi",
     "gender": "unisex",
     "price": "MKD4,500",
     "image": "images/catalog/halley_tiziana-terenzi.webp"
@@ -1046,6 +1194,7 @@
   {
     "id": 150,
     "name": "Devotion Pour Homme - Dolce & Gabbana",
+    "brand": "Dolce & Gabbana",
     "gender": "burra",
     "price": "MKD1,800",
     "image": "images/catalog/devotion-pour-homme_dolce-and-gabbana.webp"
@@ -1053,6 +1202,7 @@
   {
     "id": 151,
     "name": "Devotion Eau De Parfum - Dolce & Gabbana",
+    "brand": "Dolce & Gabbana",
     "gender": "gra",
     "price": "MKD1,800",
     "image": "images/catalog/devotion-eau-de-parfum_dolce-and-gabbana.webp"
@@ -1060,6 +1210,7 @@
   {
     "id": 152,
     "name": "Le Gemme Tygar - Bvlgari",
+    "brand": "Bvlgari",
     "gender": "unisex",
     "price": "MKD4,000",
     "image": "images/catalog/le-gemme-tygar_bvlgari.webp"
