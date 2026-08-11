@@ -68,6 +68,14 @@
         <label>Max Price: <span id="price-display">MKD 4500</span></label>
         <!-- Range: 1600 to 4500 based on your current catalog -->
         <input type="range" id="price-slider" min="1600" max="4500" step="100" value="4500">
+        <div class="filter-group">
+          <label>Sort By</label>
+          <select id="sort-select">
+            <option value="default">Default (Newest)</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
       </div>
     </div>
     
