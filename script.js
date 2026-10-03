@@ -37,21 +37,21 @@ let cart = loadCart(); // [{ sku, qty }]
 // ==========================================
 const translations = {
   en: {
-    addToCart: "Add to cart", added: "Added", cartTitle: "Your cart",
+    addToCart: "Add to cart", added: "Added to cart", cartTitle: "Your cart",
     empty: "Your cart is empty. Add a fragrance to get started.",
     total: "Total", checkout: "Checkout via WhatsApp", remove: "Remove", all: "All",
     noResults: "No fragrances match your search.",
     waText: "Hello! I would like to order:", searchPlaceholder: "Search perfumes and brands..."
   },
   sq: {
-    addToCart: "Shto në shportë", added: "U shtua", cartTitle: "Shporta juaj",
+    addToCart: "Shto në shportë", added: "U shtua në shportë", cartTitle: "Shporta juaj",
     empty: "Shporta është bosh. Shtoni një parfum për të filluar.",
     total: "Totali", checkout: "Përfundo porosinë në WhatsApp", remove: "Hiq", all: "Të gjitha",
     noResults: "Asnjë parfum nuk përputhet me kërkimin.",
     waText: "Përshëndetje! Dëshiroj të porosis:", searchPlaceholder: "Kërko parfume dhe brende..."
   },
   mk: {
-    addToCart: "Додај во кошничка", added: "Додадено", cartTitle: "Вашата кошничка",
+    addToCart: "Додај во кошничка", added: "Додадено во кошничка", cartTitle: "Вашата кошничка",
     empty: "Кошничката е празна. Додадете парфем за да започнете.",
     total: "Вкупно", checkout: "Нарачај преку WhatsApp", remove: "Отстрани", all: "Сите",
     noResults: "Нема парфеми што одговараат на пребарувањето.",
@@ -80,7 +80,7 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 });
 
 // ==========================================
-// 3. Utility Functions
+// 3. Utility Functions & UI Feedback
 // ==========================================
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
@@ -93,6 +93,24 @@ function hideLoader() {
   }
 }
 
+function showToast(message) {
+  const container = $('#toast-container');
+  if (!container) return;
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  container.appendChild(toast);
+  
+  // Trigger reflow to ensure the transition plays
+  void toast.offsetWidth;
+  toast.classList.add('show');
+  
+  setTimeout(() => {
+    toast.classList.remove('show');
+    toast.addEventListener('transitionend', () => toast.remove());
+  }, 2500);
+}
+
 // ==========================================
 // 4. Catalog UI (cards, variants, brand chips)
 // ==========================================
@@ -101,17 +119,24 @@ const selectedVariant = (p) => (skuIndex.get(state.selected[p.id]) || {}).varian
 function cardHTML(p) {
   const v = selectedVariant(p);
   const t = translations[currentLang];
+  
+  const notesHtml = p.notes && p.notes.length 
+    ? `<div class="product-notes">${p.notes.map(n => `<span class="note-tag">${esc(n)}</span>`).join('')}</div>` 
+    : '';
+
   const pills = p.variants.length > 1
     ? `<div class="variant-pills" role="group" aria-label="${esc(p.name)}">${p.variants.map(x =>
         `<button type="button" class="variant-pill${x.sku === v.sku ? ' is-active' : ''}" data-sku="${esc(x.sku)}" aria-pressed="${x.sku === v.sku}">${esc(x.label)}</button>`
       ).join('')}</div>`
     : '';
+    
   return `
     <article class="product-card" data-id="${esc(p.id)}">
       <div class="product-media"><img class="product-img" src="${esc(v.image || p.image)}" alt="${esc(p.brand + ' ' + p.name)}" loading="lazy"></div>
       <div class="product-body">
         <p class="product-brand">${esc(p.brand)}</p>
         <h3 class="product-name">${esc(p.name)}</h3>
+        ${notesHtml}
         ${pills}
         <p class="product-price">${money(v.price)}</p>
         <button type="button" class="btn-add" data-add>${t.addToCart}</button>
@@ -119,7 +144,6 @@ function cardHTML(p) {
     </article>`;
 }
 
-// Cards are rendered once; filtering only toggles `hidden`, so variant choices survive searching.
 function renderCatalog() {
   catalogEl.innerHTML = products.map(cardHTML).join('') +
     `<p id="no-results" class="no-results" hidden>${translations[currentLang].noResults}</p>`;
@@ -138,11 +162,9 @@ function updateCard(card, p) {
 }
 
 function flashAdded(btn) {
-  btn.textContent = translations[currentLang].added;
   btn.classList.add('is-added');
   clearTimeout(btn._t);
   btn._t = setTimeout(() => {
-    btn.textContent = translations[currentLang].addToCart;
     btn.classList.remove('is-added');
   }, 1200);
 }
@@ -218,7 +240,6 @@ function removeLine(sku) {
   renderCart();
 }
 
-// Prices always come from the catalog, never from stored cart data.
 const cartLines = () => cart.map(i => ({ ...i, ...skuIndex.get(i.sku) })).filter(l => l.product);
 
 function waLink(lines, total) {
@@ -247,6 +268,16 @@ function renderCart() {
   checkoutBtn.setAttribute('aria-disabled', String(!lines.length));
   checkoutBtn.href = lines.length ? waLink(lines, total) : '#';
 
+  const emptyHtml = `
+    <div class="cart-empty">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <p>${t.empty}</p>
+    </div>`;
+
   cartItemsEl.innerHTML = lines.length ? lines.map(l => `
     <div class="cart-item" data-sku="${esc(l.sku)}">
       <img class="cart-thumb" src="${esc(l.variant.image || l.product.image)}" alt="">
@@ -264,7 +295,7 @@ function renderCart() {
         <span class="cart-line-price">${money(l.qty * l.variant.price)}</span>
         <button type="button" class="cart-remove" data-remove>${t.remove}</button>
       </div>
-    </div>`).join('') : `<p class="cart-empty">${t.empty}</p>`;
+    </div>`).join('') : emptyHtml;
 }
 
 let lastFocus = null;
@@ -287,6 +318,7 @@ function setCartOpen(open) {
 // ==========================================
 async function loadCatalog() {
   try {
+    // Explicitly fetching the updated catalog file
     const response = await fetch('catalog.json');
     if (!response.ok) throw new Error('Failed to load catalog data');
     const data = await response.json();
@@ -296,14 +328,14 @@ async function loadCatalog() {
     const counts = new Map();
     products.forEach(p => {
       productById.set(p.id, p);
-      p._s = norm([p.brand, p.name, ...p.variants.map(v => v.label).filter(l => l !== 'Original')].join(' '));
+      p._s = norm([p.brand, p.name, ...(p.notes || []), ...p.variants.map(v => v.label).filter(l => l !== 'Original')].join(' '));
       p.variants.forEach(v => skuIndex.set(v.sku, { product: p, variant: v }));
       counts.set(p.brand, (counts.get(p.brand) || 0) + 1);
     });
-    // Top 8 brands by number of products (stable sort keeps catalog order on ties)
+    // Top 8 brands by number of products
     topBrands = [...counts].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([brand]) => brand);
 
-    cart = cart.filter(i => skuIndex.has(i.sku)); // drop items that left the catalog
+    cart = cart.filter(i => skuIndex.has(i.sku)); 
     saveCart();
     applyTranslation();
   } catch (error) {
@@ -315,14 +347,12 @@ async function loadCatalog() {
 // ==========================================
 // 8. Event Listeners
 // ==========================================
-// Search: filters on every keystroke, no submit button
 searchBar.addEventListener('input', () => {
   state.search = norm(searchBar.value);
   applyFilters();
 });
 searchBar.addEventListener('keydown', (e) => { if (e.key === 'Enter') searchBar.blur(); });
 
-// Brand chips: one tap filters, tapping the active chip clears it
 brandChips.addEventListener('click', (e) => {
   const chip = e.target.closest('[data-brand]');
   if (!chip) return;
@@ -340,25 +370,32 @@ genderRow.addEventListener('click', (e) => {
   applyFilters();
 });
 
-// Product cards: variant selection + add to cart (no direct WhatsApp links)
 catalogEl.addEventListener('click', (e) => {
   const card = e.target.closest('.product-card');
   if (!card) return;
   const p = productById.get(card.dataset.id);
+  
   const pill = e.target.closest('.variant-pill');
   if (pill) {
     state.selected[p.id] = pill.dataset.sku;
     updateCard(card, p);
     return;
   }
+  
   const add = e.target.closest('[data-add]');
   if (add) {
-    addToCart(selectedVariant(p).sku);
+    const v = selectedVariant(p);
+    addToCart(v.sku);
     flashAdded(add);
+    
+    // Trigger toast notification
+    const t = translations[currentLang];
+    const variantStr = p.variants.length > 1 ? ` (${v.label})` : '';
+    showToast(`${p.name}${variantStr} ${t.added.toLowerCase()}`);
   }
 });
 
-// Cart drawer
+// Cart drawer UI events
 cartToggle.addEventListener('click', () => setCartOpen(true));
 cartClose.addEventListener('click', () => setCartOpen(false));
 cartOverlay.addEventListener('click', () => setCartOpen(false));
