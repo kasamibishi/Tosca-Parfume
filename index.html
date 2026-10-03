@@ -19,20 +19,20 @@
   </div>
 
   <header id="header">
-  <img src="images/h-logo.png" alt="Tosca Parfume" id="h-logo">
-  
-  <div class="header-actions">
-  <div class="lang-switcher">
-    <button class="lang-btn active" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="sq">AL</button>
-    <button class="lang-btn" data-lang="mk">MK</button>
-  </div>
-  <button id="cart-toggle" type="button" aria-label="Open cart" aria-expanded="false" aria-controls="cart-drawer">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-    <span id="cart-count" class="cart-count" hidden>0</span>
-  </button>
-  </div>
-</header>
+    <img src="images/h-logo.png" alt="Tosca Parfume" id="h-logo">
+    
+    <div class="header-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="sq">AL</button>
+        <button class="lang-btn" data-lang="mk">MK</button>
+      </div>
+      <button id="cart-toggle" type="button" aria-label="Open cart" aria-expanded="false" aria-controls="cart-drawer">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span id="cart-count" class="cart-count" hidden>0</span>
+      </button>
+    </div>
+  </header>
   
   <!--Banner-->
   <img src="images/banner.webp" alt="" id="banner">
@@ -48,9 +48,7 @@
   </div>
 
   <!--Catalog-->
-  <div id="catalog">
-    
-  </div>
+  <div id="catalog"></div>
 
   <!-- Footer -->
   <footer id="footer">
@@ -59,9 +57,7 @@
   </footer>
 
   <!--WhatsApp Icon-->
-  <a href="https://wa.me/38978204889?text=P%C3%ABrsh%C3%ABndetje!" class="whatsapp-float" 
-    target="_blank" 
-    aria-label="Contact us on WhatsApp">
+  <a href="https://wa.me/38978204889?text=P%C3%ABrsh%C3%ABndetje!" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF">
           <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
       </svg>
@@ -69,10 +65,9 @@
 
   <!--Back Icon-->
   <button id="scroll-top-btn" aria-label="Kthehu lart">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M18 15l-6-6-6 6"/>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
+
   <!-- Cart Drawer -->
   <div id="cart-overlay"></div>
   <aside id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
@@ -86,6 +81,9 @@
       <a id="cart-checkout" class="btn-checkout disabled" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">Checkout via WhatsApp</a>
     </div>
   </aside>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>
