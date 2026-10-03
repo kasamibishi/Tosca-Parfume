@@ -7,30 +7,12 @@
       "name": "Stronger With You",
       "gender": "burra",
       "image": "images/catalog/stronger-with-you.webp",
+      "notes": ["Chestnut", "Sage", "Vanilla"],
       "variants": [
-        {
-          "sku": "emporio-armani-stronger-with-you-original",
-          "label": "Original",
-          "price": 1600
-        },
-        {
-          "sku": "emporio-armani-stronger-with-you-absolutely",
-          "label": "Absolutely",
-          "price": 1600,
-          "image": "images/catalog/stronger-with-you_absolutely.webp"
-        },
-        {
-          "sku": "emporio-armani-stronger-with-you-parfum",
-          "label": "Parfum",
-          "price": 1600,
-          "image": "images/catalog/stronger-with-you_parfum.webp"
-        },
-        {
-          "sku": "emporio-armani-stronger-with-you-intensely",
-          "label": "Intensely",
-          "price": 1600,
-          "image": "images/catalog/stronger-with-you_intensely.webp"
-        }
+        { "sku": "emporio-armani-stronger-with-you-original", "label": "Original", "price": 1600 },
+        { "sku": "emporio-armani-stronger-with-you-absolutely", "label": "Absolutely", "price": 1600, "image": "images/catalog/stronger-with-you_absolutely.webp" },
+        { "sku": "emporio-armani-stronger-with-you-parfum", "label": "Parfum", "price": 1600, "image": "images/catalog/stronger-with-you_parfum.webp" },
+        { "sku": "emporio-armani-stronger-with-you-intensely", "label": "Intensely", "price": 1600, "image": "images/catalog/stronger-with-you_intensely.webp" }
       ]
     },
     {
@@ -39,12 +21,9 @@
       "name": "Oud Wood",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_oud-wood.webp",
+      "notes": ["Oud", "Rosewood", "Cardamom"],
       "variants": [
-        {
-          "sku": "tom-ford-oud-wood-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-oud-wood-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -53,12 +32,9 @@
       "name": "Stronger With You Amber",
       "gender": "burra",
       "image": "images/catalog/stronger-with-you-amber.webp",
+      "notes": ["Amber", "Lavender", "Vanilla"],
       "variants": [
-        {
-          "sku": "emporio-armani-stronger-with-you-amber-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "emporio-armani-stronger-with-you-amber-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -67,12 +43,9 @@
       "name": "Fucking Fabulous",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_fucking-faulous.webp",
+      "notes": ["Leather", "Bitter Almond", "Tonka Bean"],
       "variants": [
-        {
-          "sku": "tom-ford-fucking-fabulous-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-fucking-fabulous-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -81,12 +54,9 @@
       "name": "Ombre Leather",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_ombre-leather.webp",
+      "notes": ["Leather", "Jasmine", "Patchouli"],
       "variants": [
-        {
-          "sku": "tom-ford-ombre-leather-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-ombre-leather-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -95,12 +65,9 @@
       "name": "Noir",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_noir.webp",
+      "notes": ["Amber", "Vanilla", "Sandalwood"],
       "variants": [
-        {
-          "sku": "tom-ford-noir-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-noir-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -109,12 +76,9 @@
       "name": "Noir Extreme",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_noir-extreme.webp",
+      "notes": ["Kulfi", "Vanilla", "Amber"],
       "variants": [
-        {
-          "sku": "tom-ford-noir-extreme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-noir-extreme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -123,12 +87,9 @@
       "name": "Bitter Peach",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_bitter-peach.webp",
+      "notes": ["Peach", "Blood Orange", "Rum"],
       "variants": [
-        {
-          "sku": "tom-ford-bitter-peach-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-bitter-peach-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -137,12 +98,9 @@
       "name": "Black Orchid",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_black-orchid.webp",
+      "notes": ["Truffle", "Orchid", "Patchouli"],
       "variants": [
-        {
-          "sku": "tom-ford-black-orchid-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-black-orchid-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -151,12 +109,9 @@
       "name": "Tobacco Vanille",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_tobacco-vanille.webp",
+      "notes": ["Tobacco Leaf", "Vanilla", "Cacao"],
       "variants": [
-        {
-          "sku": "tom-ford-tobacco-vanille-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-tobacco-vanille-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -165,12 +120,9 @@
       "name": "Lost Cherry",
       "gender": "unisex",
       "image": "images/catalog/tom-ford_lost-cherry.webp",
+      "notes": ["Sour Cherry", "Almond", "Liquor"],
       "variants": [
-        {
-          "sku": "tom-ford-lost-cherry-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tom-ford-lost-cherry-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -179,24 +131,11 @@
       "name": "Sauvage",
       "gender": "burra",
       "image": "images/catalog/dior-sauvage_elixir.webp",
+      "notes": ["Bergamot", "Ambroxan", "Sichuan Pepper"],
       "variants": [
-        {
-          "sku": "dior-sauvage-elixir",
-          "label": "Elixir",
-          "price": 1600
-        },
-        {
-          "sku": "dior-sauvage-eau-de-parfum",
-          "label": "Eau de Parfum",
-          "price": 1600,
-          "image": "images/catalog/dior-sauvage_eau-de-parfum.webp"
-        },
-        {
-          "sku": "dior-sauvage-eau-forte",
-          "label": "Eau Forte",
-          "price": 1600,
-          "image": "images/catalog/dior-sauvage_eau-forte.webp"
-        }
+        { "sku": "dior-sauvage-elixir", "label": "Elixir", "price": 1600 },
+        { "sku": "dior-sauvage-eau-de-parfum", "label": "Eau de Parfum", "price": 1600, "image": "images/catalog/dior-sauvage_eau-de-parfum.webp" },
+        { "sku": "dior-sauvage-eau-forte", "label": "Eau Forte", "price": 1600, "image": "images/catalog/dior-sauvage_eau-forte.webp" }
       ]
     },
     {
@@ -205,12 +144,9 @@
       "name": "Naxos",
       "gender": "unisex",
       "image": "images/catalog/xerjoff-naxos.webp",
+      "notes": ["Tobacco", "Honey", "Lavender"],
       "variants": [
-        {
-          "sku": "xerjoff-naxos-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-naxos-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -219,12 +155,9 @@
       "name": "Opera",
       "gender": "unisex",
       "image": "images/catalog/xerjoff-opera.webp",
+      "notes": ["Nutmeg", "Ylang-Ylang", "Vanilla"],
       "variants": [
-        {
-          "sku": "xerjoff-opera-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-opera-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -233,12 +166,9 @@
       "name": "Tony Iommi",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_tomy-iommi.webp",
+      "notes": ["Rum", "Passionfruit", "Leather"],
       "variants": [
-        {
-          "sku": "xerjoff-tony-iommi-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-tony-iommi-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -247,12 +177,9 @@
       "name": "Perseveranza",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_perseveranza.webp",
+      "notes": ["Citrus", "Woody Notes", "Musk"],
       "variants": [
-        {
-          "sku": "xerjoff-perseveranza-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-perseveranza-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -261,12 +188,9 @@
       "name": "Avanguardia",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_avanguardia.webp",
+      "notes": ["Floral Notes", "Amber", "Woods"],
       "variants": [
-        {
-          "sku": "xerjoff-avanguardia-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-avanguardia-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -275,12 +199,9 @@
       "name": "Fierezza",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_fierezza.webp",
+      "notes": ["Bergamot", "Jasmine", "Sandalwood"],
       "variants": [
-        {
-          "sku": "xerjoff-fierezza-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-fierezza-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -289,12 +210,9 @@
       "name": "Accento",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_accento.webp",
+      "notes": ["Pineapple", "Hyacinth", "Iris"],
       "variants": [
-        {
-          "sku": "xerjoff-accento-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-accento-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -303,12 +221,9 @@
       "name": "Laylati",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_laylati.webp",
+      "notes": ["Herbal Notes", "Cedar", "Tobacco"],
       "variants": [
-        {
-          "sku": "xerjoff-laylati-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-laylati-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -317,12 +232,9 @@
       "name": "Purple Accento",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_purple-accento.webp",
+      "notes": ["Pineapple", "Mandarin", "Oud"],
       "variants": [
-        {
-          "sku": "xerjoff-purple-accento-original",
-          "label": "Original",
-          "price": 3000
-        }
+        { "sku": "xerjoff-purple-accento-original", "label": "Original", "price": 3000 }
       ]
     },
     {
@@ -331,12 +243,9 @@
       "name": "Xerjoff",
       "gender": "unisex",
       "image": "images/catalog/xerjoff.webp",
+      "notes": ["Citrus", "Amber", "Musk"],
       "variants": [
-        {
-          "sku": "xerjoff-xerjoff-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-xerjoff-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -345,12 +254,9 @@
       "name": "Erba Gold",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_erba-gold.webp",
+      "notes": ["Orange", "Lemon", "Amber"],
       "variants": [
-        {
-          "sku": "xerjoff-erba-gold-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-erba-gold-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -359,12 +265,9 @@
       "name": "Erba Pura",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_erba-pura.webp",
+      "notes": ["Sicilian Orange", "White Musk", "Amber"],
       "variants": [
-        {
-          "sku": "xerjoff-erba-pura-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-erba-pura-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -373,12 +276,9 @@
       "name": "II",
       "gender": "unisex",
       "image": "images/catalog/xerjoff_2.webp",
+      "notes": ["Bergamot", "Rose", "Patchouli"],
       "variants": [
-        {
-          "sku": "xerjoff-ii-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "xerjoff-ii-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -387,12 +287,9 @@
       "name": "Oud",
       "gender": "unisex",
       "image": "images/catalog/mansion-francis-kurkdjian-paris_oud.webp",
+      "notes": ["Oud", "Saffron", "Elemi"],
       "variants": [
-        {
-          "sku": "maison-francis-kurkdjian-oud-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "maison-francis-kurkdjian-oud-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -401,12 +298,9 @@
       "name": "Baccarat",
       "gender": "unisex",
       "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat.webp",
+      "notes": ["Saffron", "Amberwood", "Fir Resin"],
       "variants": [
-        {
-          "sku": "maison-francis-kurkdjian-baccarat-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "maison-francis-kurkdjian-baccarat-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -415,12 +309,9 @@
       "name": "Grand Soir",
       "gender": "unisex",
       "image": "images/catalog/mansion-francis-kurkdjian-paris_grand-soir.webp",
+      "notes": ["Amber", "Vanilla", "Tonka Bean"],
       "variants": [
-        {
-          "sku": "maison-francis-kurkdjian-grand-soir-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "maison-francis-kurkdjian-grand-soir-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -429,12 +320,9 @@
       "name": "Baccarat Rouge 540",
       "gender": "unisex",
       "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat-540.webp",
+      "notes": ["Saffron", "Amberwood", "Fir Resin"],
       "variants": [
-        {
-          "sku": "maison-francis-kurkdjian-baccarat-rouge-540-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "maison-francis-kurkdjian-baccarat-rouge-540-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -443,12 +331,9 @@
       "name": "Falcon Leather",
       "gender": "unisex",
       "image": "images/catalog/falcon-leather_matiere-premiere.webp",
+      "notes": ["Saffron", "Birch Tar", "Benzoin"],
       "variants": [
-        {
-          "sku": "matiere-premiere-falcon-leather-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "matiere-premiere-falcon-leather-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -457,18 +342,10 @@
       "name": "Vanilla Powder",
       "gender": "unisex",
       "image": "images/catalog/vanilla-powder_matiere-premiere.webp",
+      "notes": ["Vanilla", "Palo Santo", "White Musk"],
       "variants": [
-        {
-          "sku": "matiere-premiere-vanilla-powder-original",
-          "label": "Original",
-          "price": 2000
-        },
-        {
-          "sku": "matiere-premiere-vanilla-powder-extrait-de-parfum",
-          "label": "Extrait de Parfum",
-          "price": 2000,
-          "image": "images/catalog/vanilla-powder-extraint-de-parfum_matiere-premiere.webp"
-        }
+        { "sku": "matiere-premiere-vanilla-powder-original", "label": "Original", "price": 2000 },
+        { "sku": "matiere-premiere-vanilla-powder-extrait-de-parfum", "label": "Extrait de Parfum", "price": 2000, "image": "images/catalog/vanilla-powder-extraint-de-parfum_matiere-premiere.webp" }
       ]
     },
     {
@@ -477,12 +354,9 @@
       "name": "Iris Absolu",
       "gender": "gra",
       "image": "images/catalog/la-vie-est-belle-iris-absolu_lancome.webp",
+      "notes": ["Iris", "Fig", "Patchouli"],
       "variants": [
-        {
-          "sku": "lancome-iris-absolu-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "lancome-iris-absolu-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -491,12 +365,9 @@
       "name": "L'eau De Parfum",
       "gender": "gra",
       "image": "images/catalog/leau-de-parfum_lancome.webp",
+      "notes": ["Blackcurrant", "Jasmine", "Praline"],
       "variants": [
-        {
-          "sku": "lancome-l-eau-de-parfum-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "lancome-l-eau-de-parfum-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -505,12 +376,9 @@
       "name": "N°5",
       "gender": "gra",
       "image": "images/catalog/n5_chanel.webp",
+      "notes": ["Aldehydes", "Ylang-Ylang", "Sandalwood"],
       "variants": [
-        {
-          "sku": "chanel-n5-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "chanel-n5-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -519,12 +387,9 @@
       "name": "Coco Mademoiselle",
       "gender": "gra",
       "image": "images/catalog/coco-mademoiselle_chanel.webp",
+      "notes": ["Orange", "Rose", "Patchouli"],
       "variants": [
-        {
-          "sku": "chanel-coco-mademoiselle-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "chanel-coco-mademoiselle-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -533,12 +398,9 @@
       "name": "Hypnotic Poison",
       "gender": "gra",
       "image": "images/catalog/hypnotic-posion_dior.webp",
+      "notes": ["Vanilla", "Almond", "Coconut"],
       "variants": [
-        {
-          "sku": "dior-hypnotic-poison-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "dior-hypnotic-poison-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -547,12 +409,9 @@
       "name": "J'adore",
       "gender": "gra",
       "image": "images/catalog/jadore-dior.webp",
+      "notes": ["Ylang-Ylang", "Damascus Rose", "Jasmine"],
       "variants": [
-        {
-          "sku": "dior-j-adore-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "dior-j-adore-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -561,12 +420,9 @@
       "name": "Guilty Pour Femme",
       "gender": "gra",
       "image": "images/catalog/gucci_guilty.webp",
+      "notes": ["Pink Pepper", "Lilac", "Patchouli"],
       "variants": [
-        {
-          "sku": "gucci-guilty-pour-femme-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "gucci-guilty-pour-femme-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -575,12 +431,9 @@
       "name": "Flora Gorgeous Orchid",
       "gender": "gra",
       "image": "images/catalog/guxxi-flora.webp",
+      "notes": ["Vanilla", "Orchid", "Ozone"],
       "variants": [
-        {
-          "sku": "gucci-flora-gorgeous-orchid-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "gucci-flora-gorgeous-orchid-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -589,12 +442,9 @@
       "name": "Flora Gorgeous Magenta",
       "gender": "gra",
       "image": "images/catalog/gucci-flora_gorgeous-magenta.webp",
+      "notes": ["Dewberry", "Magnolia", "Patchouli"],
       "variants": [
-        {
-          "sku": "gucci-flora-gorgeous-magenta-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "gucci-flora-gorgeous-magenta-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -603,12 +453,9 @@
       "name": "Flora Gorgeous Gardenia",
       "gender": "gra",
       "image": "images/catalog/gucci-flora_gorgeous-gardenia.webp",
+      "notes": ["Pear Blossom", "Jasmine", "Patchouli"],
       "variants": [
-        {
-          "sku": "gucci-flora-gorgeous-gardenia-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "gucci-flora-gorgeous-gardenia-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -617,26 +464,20 @@
       "name": "Guilty Pour Homme",
       "gender": "burra",
       "image": "images/catalog/gucci-guilty_pour-homme.webp",
+      "notes": ["Lavender", "Lemon", "Cedarwood"],
       "variants": [
-        {
-          "sku": "gucci-guilty-pour-homme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "gucci-guilty-pour-homme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
       "id": "gucci-guilty-absolu-de-parfum-pour-femme",
       "brand": "Gucci",
-      "name": "Guilty Absolu De Parfum Pour Femme",
+      "name": "Guilty Absolu De Parfum",
       "gender": "gra",
       "image": "images/catalog/gucci-guilty_absolu-de-parfum_pour-feme.webp",
+      "notes": ["Blackberry", "Bulgarian Rose", "Patchouli"],
       "variants": [
-        {
-          "sku": "gucci-guilty-absolu-de-parfum-pour-femme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "gucci-guilty-absolu-de-parfum-pour-femme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -645,12 +486,9 @@
       "name": "Patchouli Magnetik",
       "gender": "unisex",
       "image": "images/catalog/maison-crivelli_patchouli-magentik.webp",
+      "notes": ["Patchouli", "Gardenia", "Sandalwood"],
       "variants": [
-        {
-          "sku": "maison-crivelli-patchouli-magnetik-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "maison-crivelli-patchouli-magnetik-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -659,26 +497,20 @@
       "name": "Oud Maracuja",
       "gender": "unisex",
       "image": "images/catalog/maison-crivelli_oud-maracula.webp",
+      "notes": ["Passionfruit", "Oud", "Leather"],
       "variants": [
-        {
-          "sku": "maison-crivelli-oud-maracuja-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "maison-crivelli-oud-maracuja-original", "label": "Original", "price": 2500 }
       ]
     },
     {
       "id": "maison-crivelli-hibiscus-mahalad",
       "brand": "Maison Crivelli",
-      "name": "Hibiscus Mahalad",
+      "name": "Hibiscus Mahajád",
       "gender": "unisex",
       "image": "images/catalog/maison-crivelli_hiboscus-mahalad.webp",
+      "notes": ["Hibiscus", "Rose", "Vanilla"],
       "variants": [
-        {
-          "sku": "maison-crivelli-hibiscus-mahalad-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "maison-crivelli-hibiscus-mahalad-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -687,30 +519,12 @@
       "name": "Scandal",
       "gender": "gra",
       "image": "images/catalog/scandal_jean-paul-gaultier.webp",
+      "notes": ["Honey", "Blood Orange", "Patchouli"],
       "variants": [
-        {
-          "sku": "jean-paul-gaultier-scandal-original",
-          "label": "Original",
-          "price": 2000
-        },
-        {
-          "sku": "jean-paul-gaultier-scandal-intense",
-          "label": "Intense",
-          "price": 2000,
-          "image": "images/catalog/scandal-intense_jean-paul-gaultier.webp"
-        },
-        {
-          "sku": "jean-paul-gaultier-scandal-absolu",
-          "label": "Absolu",
-          "price": 2000,
-          "image": "images/catalog/scandal-absolu_jean-paul-gaultier.webp"
-        },
-        {
-          "sku": "jean-paul-gaultier-scandal-le-parfum",
-          "label": "Le Parfum",
-          "price": 2000,
-          "image": "images/catalog/scandal-le-parfum_jean-paul-gaultier.webp"
-        }
+        { "sku": "jean-paul-gaultier-scandal-original", "label": "Original", "price": 2000 },
+        { "sku": "jean-paul-gaultier-scandal-intense", "label": "Intense", "price": 2000, "image": "images/catalog/scandal-intense_jean-paul-gaultier.webp" },
+        { "sku": "jean-paul-gaultier-scandal-absolu", "label": "Absolu", "price": 2000, "image": "images/catalog/scandal-absolu_jean-paul-gaultier.webp" },
+        { "sku": "jean-paul-gaultier-scandal-le-parfum", "label": "Le Parfum", "price": 2000, "image": "images/catalog/scandal-le-parfum_jean-paul-gaultier.webp" }
       ]
     },
     {
@@ -719,12 +533,9 @@
       "name": "Le Beau",
       "gender": "burra",
       "image": "images/catalog/le-beau_jean-paul-gaultier.webp",
+      "notes": ["Coconut", "Tonka Bean", "Bergamot"],
       "variants": [
-        {
-          "sku": "jean-paul-gaultier-le-beau-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "jean-paul-gaultier-le-beau-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -733,12 +544,9 @@
       "name": "Paradise Garden",
       "gender": "burra",
       "image": "images/catalog/paradise-garden_jean-paul-gaultier.webp",
+      "notes": ["Green Notes", "Fig", "Sandalwood"],
       "variants": [
-        {
-          "sku": "jean-paul-gaultier-paradise-garden-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "jean-paul-gaultier-paradise-garden-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -747,24 +555,11 @@
       "name": "Le Male",
       "gender": "burra",
       "image": "images/catalog/le-male_jean-paul-gaultier.webp",
+      "notes": ["Lavender", "Mint", "Vanilla"],
       "variants": [
-        {
-          "sku": "jean-paul-gaultier-le-male-original",
-          "label": "Original",
-          "price": 2000
-        },
-        {
-          "sku": "jean-paul-gaultier-le-male-elixir-absolu",
-          "label": "Elixir Absolu",
-          "price": 2000,
-          "image": "images/catalog/le-male-elixir-absolu_jean-paul-gaultier.webp"
-        },
-        {
-          "sku": "jean-paul-gaultier-le-male-elixir",
-          "label": "Elixir",
-          "price": 2000,
-          "image": "images/catalog/le-male-elixir_jean-paul-gaultier.webp"
-        }
+        { "sku": "jean-paul-gaultier-le-male-original", "label": "Original", "price": 2000 },
+        { "sku": "jean-paul-gaultier-le-male-elixir-absolu", "label": "Elixir Absolu", "price": 2000, "image": "images/catalog/le-male-elixir-absolu_jean-paul-gaultier.webp" },
+        { "sku": "jean-paul-gaultier-le-male-elixir", "label": "Elixir", "price": 2000, "image": "images/catalog/le-male-elixir_jean-paul-gaultier.webp" }
       ]
     },
     {
@@ -773,12 +568,9 @@
       "name": "Ultra Male",
       "gender": "burra",
       "image": "images/catalog/ultra-male_jean-paul-gaultier.webp",
+      "notes": ["Pear", "Lavender", "Vanilla"],
       "variants": [
-        {
-          "sku": "jean-paul-gaultier-ultra-male-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "jean-paul-gaultier-ultra-male-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -787,12 +579,9 @@
       "name": "My Way",
       "gender": "gra",
       "image": "images/catalog/my-way_giorgio-armani.webp",
+      "notes": ["Tuberose", "Orange Blossom", "Vanilla"],
       "variants": [
-        {
-          "sku": "giorgio-armani-my-way-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "giorgio-armani-my-way-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -801,12 +590,9 @@
       "name": "My Way Nectar",
       "gender": "gra",
       "image": "images/catalog/my-way-nectar_girogio-armani.webp",
+      "notes": ["Pear Nectar", "Tuberose", "Bourbon Vanilla"],
       "variants": [
-        {
-          "sku": "giorgio-armani-my-way-nectar-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "giorgio-armani-my-way-nectar-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -815,18 +601,10 @@
       "name": "Her",
       "gender": "gra",
       "image": "images/catalog/her-burberry.webp",
+      "notes": ["Strawberry", "Jasmine", "Musk"],
       "variants": [
-        {
-          "sku": "burberry-her-original",
-          "label": "Original",
-          "price": 1800
-        },
-        {
-          "sku": "burberry-her-elixir",
-          "label": "Elixir",
-          "price": 1800,
-          "image": "images/catalog/her-elixir_burberry.webp"
-        }
+        { "sku": "burberry-her-original", "label": "Original", "price": 1800 },
+        { "sku": "burberry-her-elixir", "label": "Elixir", "price": 1800, "image": "images/catalog/her-elixir_burberry.webp" }
       ]
     },
     {
@@ -835,12 +613,9 @@
       "name": "Paradoxe",
       "gender": "gra",
       "image": "images/catalog/paradoxe_prada.webp",
+      "notes": ["Pear", "Neroli", "Amber"],
       "variants": [
-        {
-          "sku": "prada-paradoxe-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "prada-paradoxe-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -849,12 +624,9 @@
       "name": "Goddess",
       "gender": "gra",
       "image": "images/catalog/goddess_burberry.webp",
+      "notes": ["Vanilla Infusion", "Lavender", "Cacao"],
       "variants": [
-        {
-          "sku": "burberry-goddess-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "burberry-goddess-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -863,18 +635,10 @@
       "name": "Devotion",
       "gender": "gra",
       "image": "images/catalog/dolce-and-gabban_devotion.webp",
+      "notes": ["Candied Lemon", "Orange Blossom", "Vanilla"],
       "variants": [
-        {
-          "sku": "dolce-gabbana-devotion-original",
-          "label": "Original",
-          "price": 1800
-        },
-        {
-          "sku": "dolce-gabbana-devotion-eau-de-parfum",
-          "label": "Eau de Parfum",
-          "price": 1800,
-          "image": "images/catalog/devotion-eau-de-parfum_dolce-and-gabbana.webp"
-        }
+        { "sku": "dolce-gabbana-devotion-original", "label": "Original", "price": 1800 },
+        { "sku": "dolce-gabbana-devotion-eau-de-parfum", "label": "Eau de Parfum", "price": 1800, "image": "images/catalog/devotion-eau-de-parfum_dolce-and-gabbana.webp" }
       ]
     },
     {
@@ -883,12 +647,9 @@
       "name": "Power of You",
       "gender": "burra",
       "image": "images/catalog/power-of-you_emporio-armani.webp",
+      "notes": ["Cardamom", "Lavender", "Vanilla"],
       "variants": [
-        {
-          "sku": "emporio-armani-power-of-you-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "emporio-armani-power-of-you-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -897,12 +658,9 @@
       "name": "Donna",
       "gender": "gra",
       "image": "images/catalog/valentino_donna.webp",
+      "notes": ["Rose", "Iris", "Leather"],
       "variants": [
-        {
-          "sku": "valentino-donna-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "valentino-donna-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -911,12 +669,9 @@
       "name": "Voce Viva",
       "gender": "gra",
       "image": "images/catalog/voce-viva_valentino.webp",
+      "notes": ["Bergamot", "Orange Blossom", "Crystal Moss"],
       "variants": [
-        {
-          "sku": "valentino-voce-viva-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "valentino-voce-viva-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -925,12 +680,9 @@
       "name": "Libre Vanille Couture",
       "gender": "gra",
       "image": "images/catalog/libre-vanille-coutre_yes-saint-laurent.webp",
+      "notes": ["Lavender", "Madagascar Vanilla", "Orchid"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-libre-vanille-couture-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "yves-saint-laurent-libre-vanille-couture-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -939,12 +691,9 @@
       "name": "Libre",
       "gender": "gra",
       "image": "images/catalog/libre_yes-saint-laurent.webp",
+      "notes": ["Lavender", "Orange Blossom", "Musk"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-libre-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "yves-saint-laurent-libre-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -953,12 +702,9 @@
       "name": "Libre Berry Crush",
       "gender": "gra",
       "image": "images/catalog/libre-berry-crush_yes-saint-laurent.webp",
+      "notes": ["Berries", "Lavender", "Vanilla"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-libre-berry-crush-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "yves-saint-laurent-libre-berry-crush-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -967,12 +713,9 @@
       "name": "Eros Najim",
       "gender": "burra",
       "image": "images/catalog/versace_eros-najim.webp",
+      "notes": ["Mint", "Green Apple", "Tonka Bean"],
       "variants": [
-        {
-          "sku": "versace-eros-najim-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "versace-eros-najim-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -981,12 +724,9 @@
       "name": "Eros",
       "gender": "burra",
       "image": "images/catalog/versace_eros.webp",
+      "notes": ["Mint", "Vanilla", "Cedarwood"],
       "variants": [
-        {
-          "sku": "versace-eros-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "versace-eros-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -995,12 +735,9 @@
       "name": "Eros Energy",
       "gender": "burra",
       "image": "images/catalog/versace_eros-energy.webp",
+      "notes": ["Citrus", "Amber", "Woods"],
       "variants": [
-        {
-          "sku": "versace-eros-energy-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "versace-eros-energy-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1009,12 +746,9 @@
       "name": "Dylan Blue Pour Femme",
       "gender": "gra",
       "image": "images/catalog/versace-pour-femme_dyaln-blue.webp",
+      "notes": ["Blackcurrant", "Rose", "Patchouli"],
       "variants": [
-        {
-          "sku": "versace-dylan-blue-pour-femme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "versace-dylan-blue-pour-femme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1023,12 +757,9 @@
       "name": "Dylan Blue Pour Homme",
       "gender": "burra",
       "image": "images/catalog/versace-pour-homme_dylan-blue.webp",
+      "notes": ["Grapefruit", "Ambroxan", "Incense"],
       "variants": [
-        {
-          "sku": "versace-dylan-blue-pour-homme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "versace-dylan-blue-pour-homme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1037,12 +768,9 @@
       "name": "The One",
       "gender": "burra",
       "image": "images/catalog/dolce-and-gabban_the-one.webp",
+      "notes": ["Grapefruit", "Cardamom", "Tobacco"],
       "variants": [
-        {
-          "sku": "dolce-gabbana-the-one-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "dolce-gabbana-the-one-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1051,12 +779,9 @@
       "name": "Pur Oud",
       "gender": "unisex",
       "image": "images/catalog/pur-oud_louis-vitton.webp",
+      "notes": ["Oud", "Ambrettolide", "Helvetolide"],
       "variants": [
-        {
-          "sku": "louis-vuitton-pur-oud-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-pur-oud-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1065,12 +790,9 @@
       "name": "California Dream",
       "gender": "unisex",
       "image": "images/catalog/california-dream_louis-vuitton.webp",
+      "notes": ["Mandarin", "Ambrette", "Benzoin"],
       "variants": [
-        {
-          "sku": "louis-vuitton-california-dream-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-california-dream-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1079,12 +801,9 @@
       "name": "Afternoon Swim",
       "gender": "unisex",
       "image": "images/catalog/afternoon-swin_louis-vuitton.webp",
+      "notes": ["Orange", "Bergamot", "Mandarin"],
       "variants": [
-        {
-          "sku": "louis-vuitton-afternoon-swim-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-afternoon-swim-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1093,12 +812,9 @@
       "name": "Ombre Nomade",
       "gender": "unisex",
       "image": "images/catalog/ombre-nomade_louis-vuitton.webp",
+      "notes": ["Oud", "Incense", "Raspberry"],
       "variants": [
-        {
-          "sku": "louis-vuitton-ombre-nomade-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-ombre-nomade-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1107,12 +823,9 @@
       "name": "Meteore",
       "gender": "unisex",
       "image": "images/catalog/meteore_louis-vuitton.webp",
+      "notes": ["Mandarin", "Pepper", "Vetiver"],
       "variants": [
-        {
-          "sku": "louis-vuitton-meteore-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-meteore-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1121,12 +834,9 @@
       "name": "Imagination",
       "gender": "unisex",
       "image": "images/catalog/imagination_louis-vuitton.webp",
+      "notes": ["Citron", "Black Tea", "Ambroxan"],
       "variants": [
-        {
-          "sku": "louis-vuitton-imagination-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-imagination-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1135,12 +845,9 @@
       "name": "Pacific Chill",
       "gender": "unisex",
       "image": "images/catalog/pacific-chill_louis-vuitton.webp",
+      "notes": ["Blackcurrant", "Citron", "Mint"],
       "variants": [
-        {
-          "sku": "louis-vuitton-pacific-chill-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "louis-vuitton-pacific-chill-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1149,12 +856,9 @@
       "name": "Very Good Girl",
       "gender": "gra",
       "image": "images/catalog/very-good-girl_carolina-herrera.webp",
+      "notes": ["Redcurrant", "Rose", "Vetiver"],
       "variants": [
-        {
-          "sku": "carolina-herrera-very-good-girl-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "carolina-herrera-very-good-girl-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1163,12 +867,9 @@
       "name": "Good Girl Blush",
       "gender": "gra",
       "image": "images/catalog/good-girl-blush_carolina-herrera.webp",
+      "notes": ["Bergamot", "Peony", "Vanilla"],
       "variants": [
-        {
-          "sku": "carolina-herrera-good-girl-blush-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "carolina-herrera-good-girl-blush-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1177,12 +878,9 @@
       "name": "Good Girl",
       "gender": "gra",
       "image": "images/catalog/good-girl_carolina-herrera2.webp",
+      "notes": ["Almond", "Tuberose", "Tonka Bean"],
       "variants": [
-        {
-          "sku": "carolina-herrera-good-girl-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "carolina-herrera-good-girl-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1191,12 +889,9 @@
       "name": "Black Afgano",
       "gender": "unisex",
       "image": "images/catalog/black-afgano_nasomatto.webp",
+      "notes": ["Cannabis", "Resins", "Oud"],
       "variants": [
-        {
-          "sku": "nasomatto-black-afgano-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "nasomatto-black-afgano-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1205,12 +900,9 @@
       "name": "Oud For Happiness",
       "gender": "unisex",
       "image": "images/catalog/oud-for-happiness_initio.webp",
+      "notes": ["Bergamot", "Oud", "Licorice"],
       "variants": [
-        {
-          "sku": "initio-oud-for-happiness-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "initio-oud-for-happiness-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1219,12 +911,9 @@
       "name": "Side Effect",
       "gender": "unisex",
       "image": "images/catalog/side-effect_initio.webp",
+      "notes": ["Rum", "Vanilla", "Tobacco"],
       "variants": [
-        {
-          "sku": "initio-side-effect-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "initio-side-effect-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1233,12 +922,9 @@
       "name": "Eau De Parfum",
       "gender": "unisex",
       "image": "images/catalog/eau-de-parfum_initio.webp",
+      "notes": ["Floral Notes", "Amber", "Musk"],
       "variants": [
-        {
-          "sku": "initio-eau-de-parfum-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "initio-eau-de-parfum-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1247,12 +933,9 @@
       "name": "Eau De Toilette",
       "gender": "burra",
       "image": "images/catalog/eau-de-toilette_yes-saint-laurent.webp",
+      "notes": ["Citrus", "Floral Notes", "Woods"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-eau-de-toilette-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "yves-saint-laurent-eau-de-toilette-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -1261,12 +944,9 @@
       "name": "Eau De Parfum Intense",
       "gender": "burra",
       "image": "images/catalog/eau-de-parfum-intense_yes-saint-laurent.webp",
+      "notes": ["Bergamot", "Jasmine", "Amber"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-eau-de-parfum-intense-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "yves-saint-laurent-eau-de-parfum-intense-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -1275,12 +955,9 @@
       "name": "Eau Fraiche",
       "gender": "burra",
       "image": "images/catalog/eau-fraiche_yes-saint-laurent.webp",
+      "notes": ["Lemon", "Ginger", "Cedar"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-eau-fraiche-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "yves-saint-laurent-eau-fraiche-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -1289,12 +966,9 @@
       "name": "Eau De Parfum",
       "gender": "burra",
       "image": "images/catalog/eau-de-parfum_yes-saint-laurent.webp",
+      "notes": ["Apple", "Sage", "Vetiver"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-eau-de-parfum-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "yves-saint-laurent-eau-de-parfum-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -1303,12 +977,9 @@
       "name": "La Nuit de L'Homme",
       "gender": "burra",
       "image": "images/catalog/lanuit-de-lhomme_yes-saint-laurent.webp",
+      "notes": ["Cardamom", "Lavender", "Vetiver"],
       "variants": [
-        {
-          "sku": "yves-saint-laurent-la-nuit-de-l-homme-original",
-          "label": "Original",
-          "price": 1600
-        }
+        { "sku": "yves-saint-laurent-la-nuit-de-l-homme-original", "label": "Original", "price": 1600 }
       ]
     },
     {
@@ -1317,18 +988,10 @@
       "name": "Armani Code",
       "gender": "burra",
       "image": "images/catalog/armani-code_giorgio-armani.webp",
+      "notes": ["Lemon", "Olive Flower", "Tonka Bean"],
       "variants": [
-        {
-          "sku": "giorgio-armani-armani-code-original",
-          "label": "Original",
-          "price": 1800
-        },
-        {
-          "sku": "giorgio-armani-armani-code-profumo",
-          "label": "Profumo",
-          "price": 1800,
-          "image": "images/catalog/armani-code-profumo_giorgio-armani.webp"
-        }
+        { "sku": "giorgio-armani-armani-code-original", "label": "Original", "price": 1800 },
+        { "sku": "giorgio-armani-armani-code-profumo", "label": "Profumo", "price": 1800, "image": "images/catalog/armani-code-profumo_giorgio-armani.webp" }
       ]
     },
     {
@@ -1337,30 +1000,12 @@
       "name": "Acqua di Giò",
       "gender": "burra",
       "image": "images/catalog/acqua-di-gio-profondo_giorgio-armani.webp",
+      "notes": ["Marine Notes", "Bergamot", "Patchouli"],
       "variants": [
-        {
-          "sku": "giorgio-armani-acqua-di-gio-profondo",
-          "label": "Profondo",
-          "price": 1800
-        },
-        {
-          "sku": "giorgio-armani-acqua-di-gio-absolu",
-          "label": "Absolu",
-          "price": 1800,
-          "image": "images/catalog/acqua-di-gio-absolu_giorgio-armani.webp"
-        },
-        {
-          "sku": "giorgio-armani-acqua-di-gio-pour-homme",
-          "label": "Pour Homme",
-          "price": 1800,
-          "image": "images/catalog/acqua-di-gio-pour-homme_giorgio-armani.webp"
-        },
-        {
-          "sku": "giorgio-armani-acqua-di-gio-profumo-parfum",
-          "label": "Profumo Parfum",
-          "price": 1800,
-          "image": "images/catalog/acqua-di-gio-profumo-parfum_giorgio-armani.webp"
-        }
+        { "sku": "giorgio-armani-acqua-di-gio-profondo", "label": "Profondo", "price": 1800 },
+        { "sku": "giorgio-armani-acqua-di-gio-absolu", "label": "Absolu", "price": 1800, "image": "images/catalog/acqua-di-gio-absolu_giorgio-armani.webp" },
+        { "sku": "giorgio-armani-acqua-di-gio-pour-homme", "label": "Pour Homme", "price": 1800, "image": "images/catalog/acqua-di-gio-pour-homme_giorgio-armani.webp" },
+        { "sku": "giorgio-armani-acqua-di-gio-profumo-parfum", "label": "Profumo Parfum", "price": 1800, "image": "images/catalog/acqua-di-gio-profumo-parfum_giorgio-armani.webp" }
       ]
     },
     {
@@ -1369,12 +1014,9 @@
       "name": "Eros Flame",
       "gender": "burra",
       "image": "images/catalog/eros-flame-eau-de-parfum_versace.webp",
+      "notes": ["Chinotto", "Black Pepper", "Vanilla"],
       "variants": [
-        {
-          "sku": "versace-eros-flame-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "versace-eros-flame-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1383,12 +1025,9 @@
       "name": "Krike",
       "gender": "burra",
       "image": "images/catalog/krike_tiziana-terenzi.webp",
+      "notes": ["Passionfruit", "Peach", "Musk"],
       "variants": [
-        {
-          "sku": "tiziana-terenzi-krike-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "tiziana-terenzi-krike-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1397,12 +1036,9 @@
       "name": "L'Homme Milano",
       "gender": "burra",
       "image": "images/catalog/milano-lhomme-prada.webp",
+      "notes": ["Iris", "Amber", "Neroli"],
       "variants": [
-        {
-          "sku": "prada-l-homme-milano-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "prada-l-homme-milano-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1411,12 +1047,9 @@
       "name": "Milano Paradigme",
       "gender": "burra",
       "image": "images/catalog/milano-paradigme_prada.webp",
+      "notes": ["Iris", "Cardamom", "Sandalwood"],
       "variants": [
-        {
-          "sku": "prada-milano-paradigme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "prada-milano-paradigme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1425,12 +1058,9 @@
       "name": "L'Homme Ocean",
       "gender": "burra",
       "image": "images/catalog/ocean_prada.webp",
+      "notes": ["Bergamot", "Iris", "Vetiver"],
       "variants": [
-        {
-          "sku": "prada-l-homme-ocean-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "prada-l-homme-ocean-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1439,12 +1069,9 @@
       "name": "Phantom",
       "gender": "burra",
       "image": "images/catalog/phantom_paco-rabanne.webp",
+      "notes": ["Lavender", "Lemon", "Vanilla"],
       "variants": [
-        {
-          "sku": "paco-rabanne-phantom-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "paco-rabanne-phantom-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1453,12 +1080,9 @@
       "name": "Fame",
       "gender": "gra",
       "image": "images/catalog/fame_paco-rabanne.webp",
+      "notes": ["Mango", "Jasmine", "Incense"],
       "variants": [
-        {
-          "sku": "paco-rabanne-fame-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "paco-rabanne-fame-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1467,12 +1091,9 @@
       "name": "Si",
       "gender": "gra",
       "image": "images/catalog/si_giorgio-armani.webp",
+      "notes": ["Cassis", "Rose", "Vanilla"],
       "variants": [
-        {
-          "sku": "giorgio-armani-si-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "giorgio-armani-si-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1481,12 +1102,9 @@
       "name": "Eau De Parfum",
       "gender": "gra",
       "image": "images/catalog/eau-de-parfum_girogio-armani.webp",
+      "notes": ["Bergamot", "Freesia", "Patchouli"],
       "variants": [
-        {
-          "sku": "giorgio-armani-eau-de-parfum-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "giorgio-armani-eau-de-parfum-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1495,18 +1113,10 @@
       "name": "The Scent",
       "gender": "burra",
       "image": "images/catalog/the-scent_boss.webp",
+      "notes": ["Ginger", "Maninka", "Leather"],
       "variants": [
-        {
-          "sku": "hugo-boss-the-scent-original",
-          "label": "Original",
-          "price": 1800
-        },
-        {
-          "sku": "hugo-boss-the-scent-parfum",
-          "label": "Parfum",
-          "price": 1800,
-          "image": "images/catalog/the-scent-parfum_boss.webp"
-        }
+        { "sku": "hugo-boss-the-scent-original", "label": "Original", "price": 1800 },
+        { "sku": "hugo-boss-the-scent-parfum", "label": "Parfum", "price": 1800, "image": "images/catalog/the-scent-parfum_boss.webp" }
       ]
     },
     {
@@ -1515,12 +1125,9 @@
       "name": "Si Passione",
       "gender": "gra",
       "image": "images/catalog/si-passione_giorgio-armani.webp",
+      "notes": ["Pear", "Rose", "Vanilla"],
       "variants": [
-        {
-          "sku": "giorgio-armani-si-passione-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "giorgio-armani-si-passione-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1529,12 +1136,9 @@
       "name": "The Scent For Her",
       "gender": "gra",
       "image": "images/catalog/the-scent-for-her_boss.webp",
+      "notes": ["Peach", "Freesia", "Cacao"],
       "variants": [
-        {
-          "sku": "hugo-boss-the-scent-for-her-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "hugo-boss-the-scent-for-her-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1543,12 +1147,9 @@
       "name": "My Burberry Black",
       "gender": "gra",
       "image": "images/catalog/black_my-burberry.webp",
+      "notes": ["Jasmine", "Rose", "Amber"],
       "variants": [
-        {
-          "sku": "burberry-my-burberry-black-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "burberry-my-burberry-black-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1557,12 +1158,9 @@
       "name": "My Burberry Eau De Parfum",
       "gender": "gra",
       "image": "images/catalog/eau-de-parfum_my-burberry.webp",
+      "notes": ["Sweet Pea", "Quince", "Patchouli"],
       "variants": [
-        {
-          "sku": "burberry-my-burberry-eau-de-parfum-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "burberry-my-burberry-eau-de-parfum-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1571,12 +1169,9 @@
       "name": "My Burberry Blush",
       "gender": "gra",
       "image": "images/catalog/blush_my-burberry.webp",
+      "notes": ["Pomegranate", "Rose", "Jasmine"],
       "variants": [
-        {
-          "sku": "burberry-my-burberry-blush-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "burberry-my-burberry-blush-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1585,12 +1180,9 @@
       "name": "Alien",
       "gender": "gra",
       "image": "images/catalog/mugler_alien.webp",
+      "notes": ["Jasmine", "Woody Notes", "Amber"],
       "variants": [
-        {
-          "sku": "mugler-alien-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "mugler-alien-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1599,12 +1191,9 @@
       "name": "Decadence",
       "gender": "gra",
       "image": "images/catalog/decadence_marc-jacobs.webp",
+      "notes": ["Plum", "Iris", "Amber"],
       "variants": [
-        {
-          "sku": "marc-jacobs-decadence-original",
-          "label": "Original",
-          "price": 2500
-        }
+        { "sku": "marc-jacobs-decadence-original", "label": "Original", "price": 2500 }
       ]
     },
     {
@@ -1613,12 +1202,9 @@
       "name": "Roses Musk",
       "gender": "gra",
       "image": "images/catalog/montale-paris_roses-musk.webp",
+      "notes": ["Rose", "Musk", "Jasmine"],
       "variants": [
-        {
-          "sku": "montale-paris-roses-musk-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "montale-paris-roses-musk-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1627,12 +1213,9 @@
       "name": "Arabians",
       "gender": "gra",
       "image": "images/catalog/arabians_montale-paris.webp",
+      "notes": ["Cardamom", "Rose", "Oud"],
       "variants": [
-        {
-          "sku": "montale-paris-arabians-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "montale-paris-arabians-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1641,12 +1224,9 @@
       "name": "Day Dreams",
       "gender": "gra",
       "image": "images/catalog/day-dreams_montale_paris.webp",
+      "notes": ["Orange Blossom", "Tiare Flower", "Vanilla"],
       "variants": [
-        {
-          "sku": "montale-paris-day-dreams-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "montale-paris-day-dreams-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1655,12 +1235,9 @@
       "name": "Arabians Tonka",
       "gender": "gra",
       "image": "images/catalog/arabians-tonka_montale-paris.webp",
+      "notes": ["Saffron", "Tonka Bean", "Oud"],
       "variants": [
-        {
-          "sku": "montale-paris-arabians-tonka-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "montale-paris-arabians-tonka-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1669,12 +1246,9 @@
       "name": "Intense Cafe",
       "gender": "gra",
       "image": "images/catalog/intense-cafe_montale-paris.webp",
+      "notes": ["Coffee", "Rose", "Vanilla"],
       "variants": [
-        {
-          "sku": "montale-paris-intense-cafe-original",
-          "label": "Original",
-          "price": 2000
-        }
+        { "sku": "montale-paris-intense-cafe-original", "label": "Original", "price": 2000 }
       ]
     },
     {
@@ -1683,12 +1257,9 @@
       "name": "Back To Black",
       "gender": "unisex",
       "image": "images/catalog/back-to-black_kilian.webp",
+      "notes": ["Honey", "Tobacco", "Cherry"],
       "variants": [
-        {
-          "sku": "kilian-back-to-black-original",
-          "label": "Original",
-          "price": 2200
-        }
+        { "sku": "kilian-back-to-black-original", "label": "Original", "price": 2200 }
       ]
     },
     {
@@ -1697,12 +1268,9 @@
       "name": "Black Phantom",
       "gender": "unisex",
       "image": "images/catalog/black-phantom_kilian.webp",
+      "notes": ["Rum", "Dark Chocolate", "Coffee"],
       "variants": [
-        {
-          "sku": "kilian-black-phantom-original",
-          "label": "Original",
-          "price": 2200
-        }
+        { "sku": "kilian-black-phantom-original", "label": "Original", "price": 2200 }
       ]
     },
     {
@@ -1711,12 +1279,9 @@
       "name": "Angels' Share",
       "gender": "unisex",
       "image": "images/catalog/angels'share_kilian.webp",
+      "notes": ["Cognac", "Cinnamon", "Tonka Bean"],
       "variants": [
-        {
-          "sku": "kilian-angels-share-original",
-          "label": "Original",
-          "price": 2200
-        }
+        { "sku": "kilian-angels-share-original", "label": "Original", "price": 2200 }
       ]
     },
     {
@@ -1725,12 +1290,9 @@
       "name": "Toy Boy",
       "gender": "burra",
       "image": "images/catalog/toy-boy_moschino.webp",
+      "notes": ["Pink Pepper", "Rose", "Vetiver"],
       "variants": [
-        {
-          "sku": "moschino-toy-boy-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "moschino-toy-boy-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1739,12 +1301,9 @@
       "name": "Guidance 46",
       "gender": "unisex",
       "image": "images/catalog/guidance-46_amouage.webp",
+      "notes": ["Pear", "Hazelnut", "Sandalwood"],
       "variants": [
-        {
-          "sku": "amouage-guidance-46-original",
-          "label": "Original",
-          "price": 3000
-        }
+        { "sku": "amouage-guidance-46-original", "label": "Original", "price": 3000 }
       ]
     },
     {
@@ -1753,12 +1312,9 @@
       "name": "Guidance",
       "gender": "unisex",
       "image": "images/catalog/guidance_amouage.webp",
+      "notes": ["Pear", "Frankincense", "Vanilla"],
       "variants": [
-        {
-          "sku": "amouage-guidance-original",
-          "label": "Original",
-          "price": 3000
-        }
+        { "sku": "amouage-guidance-original", "label": "Original", "price": 3000 }
       ]
     },
     {
@@ -1767,12 +1323,9 @@
       "name": "Reasons",
       "gender": "unisex",
       "image": "images/catalog/reasons-amouage.webp",
+      "notes": ["Spices", "Resin", "Woods"],
       "variants": [
-        {
-          "sku": "amouage-reasons-original",
-          "label": "Original",
-          "price": 3000
-        }
+        { "sku": "amouage-reasons-original", "label": "Original", "price": 3000 }
       ]
     },
     {
@@ -1781,12 +1334,9 @@
       "name": "Outlands",
       "gender": "unisex",
       "image": "images/catalog/outlands-amouage.webp",
+      "notes": ["Citrus", "Oud", "Musk"],
       "variants": [
-        {
-          "sku": "amouage-outlands-original",
-          "label": "Original",
-          "price": 3000
-        }
+        { "sku": "amouage-outlands-original", "label": "Original", "price": 3000 }
       ]
     },
     {
@@ -1795,12 +1345,9 @@
       "name": "Reflections",
       "gender": "unisex",
       "image": "images/catalog/reflections_amouage.webp",
+      "notes": ["Rosemary", "Orris Root", "Sandalwood"],
       "variants": [
-        {
-          "sku": "amouage-reflections-original",
-          "label": "Original",
-          "price": 3000
-        }
+        { "sku": "amouage-reflections-original", "label": "Original", "price": 3000 }
       ]
     },
     {
@@ -1809,12 +1356,9 @@
       "name": "Tyl Assoluto",
       "gender": "unisex",
       "image": "images/catalog/tyl-assoluto_tiziana-terenzi.webp",
+      "notes": ["Bergamot", "Jasmine", "Amber"],
       "variants": [
-        {
-          "sku": "tiziana-terenzi-tyl-assoluto-original",
-          "label": "Original",
-          "price": 4500
-        }
+        { "sku": "tiziana-terenzi-tyl-assoluto-original", "label": "Original", "price": 4500 }
       ]
     },
     {
@@ -1823,12 +1367,9 @@
       "name": "Halley",
       "gender": "unisex",
       "image": "images/catalog/halley_tiziana-terenzi.webp",
+      "notes": ["Passionfruit", "Rose", "Musk"],
       "variants": [
-        {
-          "sku": "tiziana-terenzi-halley-original",
-          "label": "Original",
-          "price": 4500
-        }
+        { "sku": "tiziana-terenzi-halley-original", "label": "Original", "price": 4500 }
       ]
     },
     {
@@ -1837,12 +1378,9 @@
       "name": "Devotion Pour Homme",
       "gender": "burra",
       "image": "images/catalog/devotion-pour-homme_dolce-and-gabbana.webp",
+      "notes": ["Citrus", "Spices", "Amber"],
       "variants": [
-        {
-          "sku": "dolce-gabbana-devotion-pour-homme-original",
-          "label": "Original",
-          "price": 1800
-        }
+        { "sku": "dolce-gabbana-devotion-pour-homme-original", "label": "Original", "price": 1800 }
       ]
     },
     {
@@ -1851,12 +1389,9 @@
       "name": "Le Gemme Tygar",
       "gender": "unisex",
       "image": "images/catalog/le-gemme-tygar_bvlgari.webp",
+      "notes": ["Grapefruit", "Ambroxan", "Woody Notes"],
       "variants": [
-        {
-          "sku": "bvlgari-le-gemme-tygar-original",
-          "label": "Original",
-          "price": 4000
-        }
+        { "sku": "bvlgari-le-gemme-tygar-original", "label": "Original", "price": 4000 }
       ]
     }
   ]
