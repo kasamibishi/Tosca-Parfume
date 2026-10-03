@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
 </head>
 <body>
@@ -21,67 +21,30 @@
   <header id="header">
   <img src="images/h-logo.png" alt="Tosca Parfume" id="h-logo">
   
+  <div class="header-actions">
   <div class="lang-switcher">
     <button class="lang-btn active" data-lang="en">EN</button>
     <button class="lang-btn" data-lang="sq">AL</button>
     <button class="lang-btn" data-lang="mk">MK</button>
+  </div>
+  <button id="cart-toggle" type="button" aria-label="Open cart" aria-expanded="false" aria-controls="cart-drawer">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+    <span id="cart-count" class="cart-count" hidden>0</span>
+  </button>
   </div>
 </header>
   
   <!--Banner-->
   <img src="images/banner.webp" alt="" id="banner">
 
-  <!--Search Bar-->
-  <input type="text" id="search-bar" placeholder="Search perfumes and brands">
-
-  <!-- Filter -->
-  <div id="quick-filters-container">
+  <!--Search & Discovery-->
+  <input type="search" id="search-bar" placeholder="Search perfumes and brands" autocomplete="off" enterkeyhint="search" aria-label="Search perfumes and brands">
+  <div id="brand-chips" class="chip-row" role="group" aria-label="Filter by brand"></div>
+  <div id="quick-filters-container" class="chip-row" role="group" aria-label="Filter by gender">
     <button class="filter-pill active" data-key="gender" data-value="all">All</button>
     <button class="filter-pill" data-key="gender" data-value="burra">Men</button>
     <button class="filter-pill" data-key="gender" data-value="gra">Women</button>
     <button class="filter-pill" data-key="gender" data-value="unisex">Unisex</button>
-    <button id="btn-open-filters" class="filter-pill advanced-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-      Filters
-    </button>
-  </div>
-
-  <!-- Advanced Filter Bottom Sheet -->
-  <div id="filter-overlay" class="hidden"></div>
-  <div id="advanced-filters" class="bottom-sheet hidden">
-    <div class="sheet-header">
-      <h3>Advanced Filters</h3>
-      <button id="btn-close-filters">&times;</button>
-    </div>
-    
-    <div class="sheet-body">
-      <!-- Brand Filter -->
-      <div class="filter-group">
-        <label>Brand</label>
-        <select id="brand-select">
-          
-        </select>
-      </div>
-
-      <!-- Price Filter -->
-      <div class="filter-group">
-        <label>Max Price: <span id="price-display">MKD 4500</span></label>
-        <!-- Range: 1600 to 4500 based on your current catalog -->
-        <input type="range" id="price-slider" min="1600" max="4500" step="100" value="4500">
-        <div class="filter-group">
-          <label>Sort By</label>
-          <select id="sort-select">
-            <option value="default">Default (Newest)</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    
-    <div class="sheet-footer">
-      <button id="btn-apply-filters" class="btn-primary">Apply Filters</button>
-    </div>
   </div>
 
   <!--Catalog-->
@@ -110,6 +73,20 @@
       <path d="M18 15l-6-6-6 6"/>
     </svg>
   </button>
+  <!-- Cart Drawer -->
+  <div id="cart-overlay"></div>
+  <aside id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-head">
+      <h2 id="cart-title">Your cart</h2>
+      <button id="cart-close" type="button" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span id="cart-total-label">Total</span><strong id="cart-total">MKD 0</strong></div>
+      <a id="cart-checkout" class="btn-checkout disabled" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">Checkout via WhatsApp</a>
+    </div>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>
