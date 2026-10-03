@@ -1,410 +1,769 @@
-[
-  {
-    "id": 1,
-    "name": "Stronger With You - Absolutely",
-    "brand": "Emporio Armani",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/stronger-with-you_absolutely.webp"
-  },
-  {
-    "id": 2,
-    "name": "Stronger With You - Parfum",
-    "brand": "Emporio Armani",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/stronger-with-you_parfum.webp"
-  },
-  {
-    "id": 3,
-    "name": "Stronger With You",
-    "brand": "Emporio Armani",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/stronger-with-you.webp"
-  },
-  {
-    "id": 4,
-    "name": "Stronger With You - Intensely",
-    "brand": "Emporio Armani",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/stronger-with-you_intensely.webp"
-  },
-  {
-    "id": 5,
-    "name": "Tom Ford - Oud Wood",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_oud-wood.webp"
-  },
-  {
-    "id": 6,
-    "name": "Stronger With You - Amber",
-    "brand": "Emporio Armani",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/stronger-with-you-amber.webp"
-  },
-  {
-    "id": 7,
-    "name": "Tom Ford - Fucking Fabulous",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_fucking-faulous.webp"
-  },
-  {
-    "id": 8,
-    "name": "Tom Ford - Ombre Leather",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_ombre-leather.webp"
-  },
-  {
-    "id": 9,
-    "name": "Tom Ford - Noir",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_noir.webp"
-  },
-  {
-    "id": 10,
-    "name": "Tom Ford - Noir Extreme",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_noir-extreme.webp"
-  },
-  {
-    "id": 11,
-    "name": "Tom Ford - Bitter Peach",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_bitter-peach.webp"
-  },
-  {
-    "id": 12,
-    "name": "Tom Ford - Black Orchid",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_black-orchid.webp"
-  },
-  {
-    "id": 13,
-    "name": "Tom Ford - Tobacco Vanille",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_tobacco-vanille.webp"
-  },
-  {
-    "id": 14,
-    "name": "Tom Ford - Lost Cherry",
-    "brand": "Tom Ford",
-    "gender": "unisex",
-    "price": "MKD1,800",
-    "image": "images/catalog/tom-ford_lost-cherry.webp"
-  },
-  {
-    "id": 15,
-    "name": "Dior Sauvage - Elixir",
-    "brand": "Dior",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/dior-sauvage_elixir.webp"
-  },
-  {
-    "id": 16,
-    "name": "Dior Sauvage - Eau De Parfum",
-    "brand": "Dior",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/dior-sauvage_eau-de-parfum.webp"
-  },
-  {
-    "id": 17,
-    "name": "Dior Sauvage - Eau Forte",
-    "brand": "Dior",
-    "gender": "burra",
-    "price": "MKD1,600",
-    "image": "images/catalog/dior-sauvage_eau-forte.webp"
-  },
-  {
-    "id": 18,
-    "name": "Xejroff - Naxos",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff-naxos.webp"
-  },
-  {
-    "id": 19,
-    "name": "Xerjoff - Opera",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff-opera.webp"
-  },
-  {
-    "id": 20,
-    "name": "Xerjoff - Tomy Iommi",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_tomy-iommi.webp"
-  },
-  {
-    "id": 21,
-    "name": "Xerjoff - Perseveranza",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_perseveranza.webp"
-  },
-  {
-    "id": 22,
-    "name": "Xerjoff - Avanguardia",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_avanguardia.webp"
-  },
-  {
-    "id": 23,
-    "name": "Xerjoff - Fierezza",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_fierezza.webp"
-  },
-  {
-    "id": 24,
-    "name": "Xerjoff - Accento",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_accento.webp"
-  },
-  {
-    "id": 25,
-    "name": "Xerjoff - Laylati",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_laylati.webp"
-  },
-  {
-    "id": 26,
-    "name": "Xerjoff - Purple Accento",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD3,000",
-    "image": "images/catalog/xerjoff_purple-accento.webp"
-  },
-  {
-    "id": 27,
-    "name": "Xerjoff",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff.webp"
-  },
-  {
-    "id": 28,
-    "name": "Xerjoff - Erba Gold",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_erba-gold.webp"
-  },
-  {
-    "id": 29,
-    "name": "Xerjoff - Erba Pura",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_erba-pura.webp"
-  },
-  {
-    "id": 30,
-    "name": "Xerjoff - II",
-    "brand": "Xerjoff",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/xerjoff_2.webp"
-  },
-  {
-    "id": 31,
-    "name": "Mansion Francis Kurkdjian Paris - Oud",
-    "brand": "Maison Francis Kurkdjian",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/mansion-francis-kurkdjian-paris_oud.webp"
-  },
-  {
-    "id": 32,
-    "name": "Mansion Francis Kurkdjian Paris - Baccarat",
-    "brand": "Maison Francis Kurkdjian",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat.webp"
-  },
-  {
-    "id": 33,
-    "name": "Mansion Francis Kurkdjian Paris - Grand Soir",
-    "brand": "Maison Francis Kurkdjian",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/mansion-francis-kurkdjian-paris_grand-soir.webp"
-  },
-  {
-    "id": 34,
-    "name": "Mansion Francis Kurkdjian Paris - Baccarat Rouge 540",
-    "brand": "Maison Francis Kurkdjian",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat-540.webp"
-  },
-  {
-    "id": 35,
-    "name": "Falcon Leather - Matiere Premiere",
-    "brand": "Matiere Premiere",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/falcon-leather_matiere-premiere.webp"
-  },
-  {
-    "id": 36,
-    "name": "Vanilla Powder - Matiere Premiere",
-    "brand": "Matiere Premiere",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/vanilla-powder_matiere-premiere.webp"
-  },
-  {
-    "id": 37,
-    "name": "Vanilla Powder Extraint De Parfum - Matiere Premiere",
-    "brand": "Matiere Premiere",
-    "gender": "unisex",
-    "price": "MKD2,000",
-    "image": "images/catalog/vanilla-powder-extraint-de-parfum_matiere-premiere.webp"
-  },
-  {
-    "id": 38,
-    "name": "Iris Absolu - Lancome",
-    "brand": "Lancome",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/la-vie-est-belle-iris-absolu_lancome.webp"
-  },
-  {
-    "id": 39,
-    "name": "L'eau De Parfum",
-    "brand": "Lancome",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/leau-de-parfum_lancome.webp"
-  },
-  {
-    "id": 40,
-    "name": "N5 - Chanel",
-    "brand": "Chanel",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/n5_chanel.webp"
-  },
-  {
-    "id": 41,
-    "name": "Coco Mademoiselle -Chanel",
-    "brand": "Chanel",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/coco-mademoiselle_chanel.webp"
-  },
-  {
-    "id": 42,
-    "name": "Hypnotic Posion - Dior",
-    "brand": "Dior",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/hypnotic-posion_dior.webp"
-  },
-  {
-    "id": 43,
-    "name": "Jadore - Dior",
-    "brand": "Dior",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/jadore-dior.webp"
-  },
-  {
-    "id": 44,
-    "name": "Gucci Guilty - Pour Femme",
-    "brand": "Gucci",
-    "gender": "gra",
-    "price": "MKD1,600",
-    "image": "images/catalog/gucci_guilty.webp"
-  },
-  {
-    "id": 45,
-    "name": "Gucci Flora - Gorgeous Orchid",
-    "brand": "Gucci",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/guxxi-flora.webp"
-  },
-  {
-    "id": 46,
-    "name": "Gucci Flora - Gorgeous Magenta",
-    "brand": "Gucci",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/gucci-flora_gorgeous-magenta.webp"
-  },
-  {
-    "id": 47,
-    "name": "Gucci Flora - Gorgeous Gardenia",
-    "brand": "Gucci",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/gucci-flora_gorgeous-gardenia.webp"
-  },
-  {
-    "id": 48,
-    "name": "Gucci Guilty - Pour Homme",
-    "brand": "Gucci",
-    "gender": "burra",
-    "price": "MKD1,800",
-    "image": "images/catalog/gucci-guilty_pour-homme.webp"
-  },
-  {
-    "id": 49,
-    "name": "Gucci Guilty - Absolu De Parfum Pour Femme",
-    "brand": "Gucci",
-    "gender": "gra",
-    "price": "MKD1,800",
-    "image": "images/catalog/gucci-guilty_absolu-de-parfum_pour-feme.webp"
-  },
-  {
-    "id": 50,
-    "name": "Maison Crivelli - Patchouli Magnetik",
-    "brand": "Maison Crivelli",
-    "gender": "unisex",
-    "price": "MKD2,500",
-    "image": "images/catalog/maison-crivelli_patchouli-magentik.webp"
-  },
-  {
-    "id": 51,
-    "name": "Maison Crivelli - Oud Maracula",
-    "brand": "Maison Crivelli",
-    "gender": "unisex",
-    "price": "MKD2,500",
+{
+  "currency": "MKD",
+  "products": [
+    {
+      "id": "emporio-armani-stronger-with-you",
+      "brand": "Emporio Armani",
+      "name": "Stronger With You",
+      "gender": "burra",
+      "image": "images/catalog/stronger-with-you.webp",
+      "variants": [
+        {
+          "sku": "emporio-armani-stronger-with-you-original",
+          "label": "Original",
+          "price": 1600
+        },
+        {
+          "sku": "emporio-armani-stronger-with-you-absolutely",
+          "label": "Absolutely",
+          "price": 1600,
+          "image": "images/catalog/stronger-with-you_absolutely.webp"
+        },
+        {
+          "sku": "emporio-armani-stronger-with-you-parfum",
+          "label": "Parfum",
+          "price": 1600,
+          "image": "images/catalog/stronger-with-you_parfum.webp"
+        },
+        {
+          "sku": "emporio-armani-stronger-with-you-intensely",
+          "label": "Intensely",
+          "price": 1600,
+          "image": "images/catalog/stronger-with-you_intensely.webp"
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-oud-wood",
+      "brand": "Tom Ford",
+      "name": "Oud Wood",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_oud-wood.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-oud-wood-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "emporio-armani-stronger-with-you-amber",
+      "brand": "Emporio Armani",
+      "name": "Stronger With You Amber",
+      "gender": "burra",
+      "image": "images/catalog/stronger-with-you-amber.webp",
+      "variants": [
+        {
+          "sku": "emporio-armani-stronger-with-you-amber-original",
+          "label": "Original",
+          "price": 1600
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-fucking-fabulous",
+      "brand": "Tom Ford",
+      "name": "Fucking Fabulous",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_fucking-faulous.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-fucking-fabulous-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-ombre-leather",
+      "brand": "Tom Ford",
+      "name": "Ombre Leather",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_ombre-leather.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-ombre-leather-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-noir",
+      "brand": "Tom Ford",
+      "name": "Noir",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_noir.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-noir-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-noir-extreme",
+      "brand": "Tom Ford",
+      "name": "Noir Extreme",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_noir-extreme.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-noir-extreme-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-bitter-peach",
+      "brand": "Tom Ford",
+      "name": "Bitter Peach",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_bitter-peach.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-bitter-peach-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-black-orchid",
+      "brand": "Tom Ford",
+      "name": "Black Orchid",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_black-orchid.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-black-orchid-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-tobacco-vanille",
+      "brand": "Tom Ford",
+      "name": "Tobacco Vanille",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_tobacco-vanille.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-tobacco-vanille-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-lost-cherry",
+      "brand": "Tom Ford",
+      "name": "Lost Cherry",
+      "gender": "unisex",
+      "image": "images/catalog/tom-ford_lost-cherry.webp",
+      "variants": [
+        {
+          "sku": "tom-ford-lost-cherry-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "brand": "Dior",
+      "name": "Sauvage",
+      "gender": "burra",
+      "image": "images/catalog/dior-sauvage_elixir.webp",
+      "variants": [
+        {
+          "sku": "dior-sauvage-elixir",
+          "label": "Elixir",
+          "price": 1600
+        },
+        {
+          "sku": "dior-sauvage-eau-de-parfum",
+          "label": "Eau de Parfum",
+          "price": 1600,
+          "image": "images/catalog/dior-sauvage_eau-de-parfum.webp"
+        },
+        {
+          "sku": "dior-sauvage-eau-forte",
+          "label": "Eau Forte",
+          "price": 1600,
+          "image": "images/catalog/dior-sauvage_eau-forte.webp"
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-naxos",
+      "brand": "Xerjoff",
+      "name": "Naxos",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff-naxos.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-naxos-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-opera",
+      "brand": "Xerjoff",
+      "name": "Opera",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff-opera.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-opera-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-tony-iommi",
+      "brand": "Xerjoff",
+      "name": "Tony Iommi",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_tomy-iommi.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-tony-iommi-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-perseveranza",
+      "brand": "Xerjoff",
+      "name": "Perseveranza",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_perseveranza.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-perseveranza-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-avanguardia",
+      "brand": "Xerjoff",
+      "name": "Avanguardia",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_avanguardia.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-avanguardia-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-fierezza",
+      "brand": "Xerjoff",
+      "name": "Fierezza",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_fierezza.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-fierezza-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-accento",
+      "brand": "Xerjoff",
+      "name": "Accento",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_accento.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-accento-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-laylati",
+      "brand": "Xerjoff",
+      "name": "Laylati",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_laylati.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-laylati-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-purple-accento",
+      "brand": "Xerjoff",
+      "name": "Purple Accento",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_purple-accento.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-purple-accento-original",
+          "label": "Original",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-xerjoff",
+      "brand": "Xerjoff",
+      "name": "Xerjoff",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-xerjoff-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-erba-gold",
+      "brand": "Xerjoff",
+      "name": "Erba Gold",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_erba-gold.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-erba-gold-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-erba-pura",
+      "brand": "Xerjoff",
+      "name": "Erba Pura",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_erba-pura.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-erba-pura-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "xerjoff-ii",
+      "brand": "Xerjoff",
+      "name": "II",
+      "gender": "unisex",
+      "image": "images/catalog/xerjoff_2.webp",
+      "variants": [
+        {
+          "sku": "xerjoff-ii-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "maison-francis-kurkdjian-oud",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Oud",
+      "gender": "unisex",
+      "image": "images/catalog/mansion-francis-kurkdjian-paris_oud.webp",
+      "variants": [
+        {
+          "sku": "maison-francis-kurkdjian-oud-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "maison-francis-kurkdjian-baccarat",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Baccarat",
+      "gender": "unisex",
+      "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat.webp",
+      "variants": [
+        {
+          "sku": "maison-francis-kurkdjian-baccarat-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "maison-francis-kurkdjian-grand-soir",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Grand Soir",
+      "gender": "unisex",
+      "image": "images/catalog/mansion-francis-kurkdjian-paris_grand-soir.webp",
+      "variants": [
+        {
+          "sku": "maison-francis-kurkdjian-grand-soir-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "maison-francis-kurkdjian-baccarat-rouge-540",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "Baccarat Rouge 540",
+      "gender": "unisex",
+      "image": "images/catalog/mansion-francis-kurkdjian-paris_baccarat-540.webp",
+      "variants": [
+        {
+          "sku": "maison-francis-kurkdjian-baccarat-rouge-540-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "matiere-premiere-falcon-leather",
+      "brand": "Matiere Premiere",
+      "name": "Falcon Leather",
+      "gender": "unisex",
+      "image": "images/catalog/falcon-leather_matiere-premiere.webp",
+      "variants": [
+        {
+          "sku": "matiere-premiere-falcon-leather-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "matiere-premiere-vanilla-powder",
+      "brand": "Matiere Premiere",
+      "name": "Vanilla Powder",
+      "gender": "unisex",
+      "image": "images/catalog/vanilla-powder_matiere-premiere.webp",
+      "variants": [
+        {
+          "sku": "matiere-premiere-vanilla-powder-original",
+          "label": "Original",
+          "price": 2000
+        },
+        {
+          "sku": "matiere-premiere-vanilla-powder-extrait-de-parfum",
+          "label": "Extrait de Parfum",
+          "price": 2000,
+          "image": "images/catalog/vanilla-powder-extraint-de-parfum_matiere-premiere.webp"
+        }
+      ]
+    },
+    {
+      "id": "lancome-iris-absolu",
+      "brand": "Lancome",
+      "name": "Iris Absolu",
+      "gender": "gra",
+      "image": "images/catalog/la-vie-est-belle-iris-absolu_lancome.webp",
+      "variants": [
+        {
+          "sku": "lancome-iris-absolu-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "lancome-l-eau-de-parfum",
+      "brand": "Lancome",
+      "name": "L'eau De Parfum",
+      "gender": "gra",
+      "image": "images/catalog/leau-de-parfum_lancome.webp",
+      "variants": [
+        {
+          "sku": "lancome-l-eau-de-parfum-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "chanel-n5",
+      "brand": "Chanel",
+      "name": "N°5",
+      "gender": "gra",
+      "image": "images/catalog/n5_chanel.webp",
+      "variants": [
+        {
+          "sku": "chanel-n5-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "brand": "Chanel",
+      "name": "Coco Mademoiselle",
+      "gender": "gra",
+      "image": "images/catalog/coco-mademoiselle_chanel.webp",
+      "variants": [
+        {
+          "sku": "chanel-coco-mademoiselle-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison",
+      "brand": "Dior",
+      "name": "Hypnotic Poison",
+      "gender": "gra",
+      "image": "images/catalog/hypnotic-posion_dior.webp",
+      "variants": [
+        {
+          "sku": "dior-hypnotic-poison-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "dior-j-adore",
+      "brand": "Dior",
+      "name": "J'adore",
+      "gender": "gra",
+      "image": "images/catalog/jadore-dior.webp",
+      "variants": [
+        {
+          "sku": "dior-j-adore-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "gucci-guilty-pour-femme",
+      "brand": "Gucci",
+      "name": "Guilty Pour Femme",
+      "gender": "gra",
+      "image": "images/catalog/gucci_guilty.webp",
+      "variants": [
+        {
+          "sku": "gucci-guilty-pour-femme-original",
+          "label": "Original",
+          "price": 1600
+        }
+      ]
+    },
+    {
+      "id": "gucci-flora-gorgeous-orchid",
+      "brand": "Gucci",
+      "name": "Flora Gorgeous Orchid",
+      "gender": "gra",
+      "image": "images/catalog/guxxi-flora.webp",
+      "variants": [
+        {
+          "sku": "gucci-flora-gorgeous-orchid-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "gucci-flora-gorgeous-magenta",
+      "brand": "Gucci",
+      "name": "Flora Gorgeous Magenta",
+      "gender": "gra",
+      "image": "images/catalog/gucci-flora_gorgeous-magenta.webp",
+      "variants": [
+        {
+          "sku": "gucci-flora-gorgeous-magenta-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "gucci-flora-gorgeous-gardenia",
+      "brand": "Gucci",
+      "name": "Flora Gorgeous Gardenia",
+      "gender": "gra",
+      "image": "images/catalog/gucci-flora_gorgeous-gardenia.webp",
+      "variants": [
+        {
+          "sku": "gucci-flora-gorgeous-gardenia-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "gucci-guilty-pour-homme",
+      "brand": "Gucci",
+      "name": "Guilty Pour Homme",
+      "gender": "burra",
+      "image": "images/catalog/gucci-guilty_pour-homme.webp",
+      "variants": [
+        {
+          "sku": "gucci-guilty-pour-homme-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "gucci-guilty-absolu-de-parfum-pour-femme",
+      "brand": "Gucci",
+      "name": "Guilty Absolu De Parfum Pour Femme",
+      "gender": "gra",
+      "image": "images/catalog/gucci-guilty_absolu-de-parfum_pour-feme.webp",
+      "variants": [
+        {
+          "sku": "gucci-guilty-absolu-de-parfum-pour-femme-original",
+          "label": "Original",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "maison-crivelli-patchouli-magnetik",
+      "brand": "Maison Crivelli",
+      "name": "Patchouli Magnetik",
+      "gender": "unisex",
+      "image": "images/catalog/maison-crivelli_patchouli-magentik.webp",
+      "variants": [
+        {
+          "sku": "maison-crivelli-patchouli-magnetik-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "maison-crivelli-oud-maracuja",
+      "brand": "Maison Crivelli",
+      "name": "Oud Maracuja",
+      "gender": "unisex",
+      "image": "images/catalog/maison-crivelli_oud-maracula.webp",
+      "variants": [
+        {
+          "sku": "maison-crivelli-oud-maracuja-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "maison-crivelli-hibiscus-mahalad",
+      "brand": "Maison Crivelli",
+      "name": "Hibiscus Mahalad",
+      "gender": "unisex",
+      "image": "images/catalog/maison-crivelli_hiboscus-mahalad.webp",
+      "variants": [
+        {
+          "sku": "maison-crivelli-hibiscus-mahalad-original",
+          "label": "Original",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-scandal",
+      "brand": "Jean Paul Gaultier",
+      "name": "Scandal",
+      "gender": "gra",
+      "image": "images/catalog/scandal_jean-paul-gaultier.webp",
+      "variants": [
+        {
+          "sku": "jean-paul-gaultier-scandal-original",
+          "label": "Original",
+          "price": 2000
+        },
+        {
+          "sku": "jean-paul-gaultier-scandal-intense",
+          "label": "Intense",
+          "price": 2000,
+          "image": "images/catalog/scandal-intense_jean-paul-gaultier.webp"
+        },
+        {
+          "sku": "jean-paul-gaultier-scandal-absolu",
+          "label": "Absolu",
+          "price": 2000,
+          "image": "images/catalog/scandal-absolu_jean-paul-gaultier.webp"
+        },
+        {
+          "sku": "jean-paul-gaultier-scandal-le-parfum",
+          "label": "Le Parfum",
+          "price": 2000,
+          "image": "images/catalog/scandal-le-parfum_jean-paul-gaultier.webp"
+        }
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-le-beau",
+      "brand": "Jean Paul Gaultier",
+      "name": "Le Beau",
+      "gender": "burra",
+      "image": "images/catalog/le-beau_jean-paul-gaultier.webp",
+      "variants": [
+        {
+          "sku": "jean-paul-gaultier-le-beau-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-paradise-garden",
+      "brand": "Jean Paul Gaultier",
+      "name": "Paradise Garden",
+      "gender": "burra",
+      "image": "images/catalog/paradise-garden_jean-paul-gaultier.webp",
+      "variants": [
+        {
+          "sku": "jean-paul-gaultier-paradise-garden-original",
+          "label": "Original",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-le-male",
+      "brand": "Jean Paul Gaultier",
+      "name": "Le Male",
+      "gender": "burra",
+      "image": "images/catalog/le-male_jean-paul-gaultier.webp",
+      "variants": [
+        {
+          "sku": "jean-paul-gaultier-le-male-original",
+          "label": "Original",
+          "price": 2000
+        },
+        {
+          "sku": "jean-paul-gaultier-le-male-elixir-absolu",
+          "label": "Elixir Absolu",
+          "price": 2000,
+          "image": "images/catalog/le-male-elixir-absolu_jean-paul-gaultier.webp"
+        },
+        {
+          "sku": "jean-paul-gaultier-le-male-elixir",
+          "label": "Elixir",
+          "price": 2000,
+          "image": "images/catalog
     "image": "images/catalog/maison-crivelli_oud-maracula.webp"
   },
   {
