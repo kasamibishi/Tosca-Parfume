@@ -1,427 +1,354 @@
 // ==========================================
 // 1. DOM Elements & Application State
 // ==========================================
-const $ = (sel) => document.querySelector(sel);
-const catalogEl = $('#catalog');
-const searchBar = $('#search-bar');
-const brandChips = $('#brand-chips');
-const genderRow = $('#quick-filters-container');
-const scrollTopBtn = $('#scroll-top-btn');
-const loader = $('#page-loader');
+const catalogContainer = document.getElementById('catalog');
+const searchBar = document.getElementById('search-bar');
+const scrollTopBtn = document.getElementById('scroll-top-btn');
+const loader = document.getElementById('page-loader');
+const resultCount = document.getElementById('result-count');
+const waNumber = "38978204889";
 
-const cartToggle = $('#cart-toggle');
-const cartCount = $('#cart-count');
-const cartDrawer = $('#cart-drawer');
-const cartOverlay = $('#cart-overlay');
-const cartClose = $('#cart-close');
-const cartTitle = $('#cart-title');
-const cartItemsEl = $('#cart-items');
-const cartTotalLabel = $('#cart-total-label');
-const cartTotalEl = $('#cart-total');
-const checkoutBtn = $('#cart-checkout');
+const btnOpenFilters = document.getElementById('btn-open-filters');
+const btnCloseFilters = document.getElementById('btn-close-filters');
+const filterOverlay = document.getElementById('filter-overlay');
+const advancedFiltersSheet = document.getElementById('advanced-filters');
+const priceSlider = document.getElementById('price-slider');
+const priceDisplay = document.getElementById('price-display');
+const brandSelect = document.getElementById('brand-select');
+const sortSelect = document.getElementById('sort-select');
+const btnApplyFilters = document.getElementById('btn-apply-filters');
+const filterPills = document.querySelectorAll('#quick-filters-container .filter-pill[data-key="gender"]');
 
-const WA_NUMBER = '38978204889';
-const CART_KEY = 'tosca_cart';
+let catalogData = [];
 
-let products = [];
-let topBrands = [];
-let currency = 'MKD';
-const productById = new Map();
-const skuIndex = new Map(); // sku -> { product, variant }
-
-const state = { search: '', gender: 'all', brand: 'all', selected: {} }; // selected: productId -> sku
-let cart = loadCart(); // [{ sku, qty }]
+const filterState = {
+  search: '',
+  gender: 'all',
+  brand: 'all',
+  maxPrice: 4500,
+  sortBy: 'default'
+};
 
 // ==========================================
 // 2. Localization Engine
 // ==========================================
 const translations = {
-  en: {
-    addToCart: "Add to cart", added: "Added to cart", cartTitle: "Your cart",
-    empty: "Your cart is empty. Add a fragrance to get started.",
-    total: "Total", checkout: "Checkout via WhatsApp", remove: "Remove", all: "All",
-    noResults: "No fragrances match your search.",
-    waText: "Hello! I would like to order:", searchPlaceholder: "Search perfumes and brands..."
-  },
   sq: {
-    addToCart: "Shto në shportë", added: "U shtua në shportë", cartTitle: "Shporta juaj",
-    empty: "Shporta është bosh. Shtoni një parfum për të filluar.",
-    total: "Totali", checkout: "Përfundo porosinë në WhatsApp", remove: "Hiq", all: "Të gjitha",
-    noResults: "Asnjë parfum nuk përputhet me kërkimin.",
-    waText: "Përshëndetje! Dëshiroj të porosis:", searchPlaceholder: "Kërko parfume dhe brende..."
+    orderBtn: "Porosit tani", waText: "Përshëndetje! Dëshiroj të porosis:",
+    searchPlaceholder: "Kërko parfume dhe marka", searchLabel: "Kërko parfume dhe marka",
+    all: "Të gjitha", men: "Meshkuj", women: "Femra", unisex: "Unisex", filters: "Filtra",
+    advTitle: "Filtra të avancuar", brand: "Marka", allBrands: "Të gjitha markat",
+    maxPrice: "Çmimi maksimal", sortBy: "Rendit sipas",
+    sortDefault: "Parazgjedhur (më të rejat)", sortAsc: "Çmimi: nga më i ulëti", sortDesc: "Çmimi: nga më i larti",
+    apply: "Apliko filtrat", noResults: "Nuk u gjet asnjë parfum.",
+    count: n => n === 1 ? "1 parfum" : `${n} parfume`
   },
   mk: {
-    addToCart: "Додај во кошничка", added: "Додадено во кошничка", cartTitle: "Вашата кошничка",
-    empty: "Кошничката е празна. Додадете парфем за да започнете.",
-    total: "Вкупно", checkout: "Нарачај преку WhatsApp", remove: "Отстрани", all: "Сите",
-    noResults: "Нема парфеми што одговараат на пребарувањето.",
-    waText: "Здраво! Сакам да нарачам:", searchPlaceholder: "Пребарај парфеми и брендови..."
+    orderBtn: "Нарачај", waText: "Здраво! Сакам да нарачам:",
+    searchPlaceholder: "Пребарај парфеми и брендови", searchLabel: "Пребарај парфеми и брендови",
+    all: "Сите", men: "Мажи", women: "Жени", unisex: "Унисекс", filters: "Филтри",
+    advTitle: "Напредни филтри", brand: "Бренд", allBrands: "Сите брендови",
+    maxPrice: "Максимална цена", sortBy: "Подреди по",
+    sortDefault: "Стандардно (најнови)", sortAsc: "Цена: од пониска кон повисока", sortDesc: "Цена: од повисока кон пониска",
+    apply: "Примени филтри", noResults: "Не е пронајден парфем.",
+    count: n => n === 1 ? "1 парфем" : `${n} парфеми`
+  },
+  en: {
+    orderBtn: "Order now", waText: "Hello! I would like to order:",
+    searchPlaceholder: "Search perfumes and brands", searchLabel: "Search perfumes and brands",
+    all: "All", men: "Men", women: "Women", unisex: "Unisex", filters: "Filters",
+    advTitle: "Advanced filters", brand: "Brand", allBrands: "All brands",
+    maxPrice: "Max price", sortBy: "Sort by",
+    sortDefault: "Default (newest)", sortAsc: "Price: low to high", sortDesc: "Price: high to low",
+    apply: "Apply filters", noResults: "No perfumes found.",
+    count: n => n === 1 ? "1 fragrance" : `${n} fragrances`
   }
 };
 
-let currentLang = localStorage.getItem('tosca_lang') || 'en';
-if (!translations[currentLang]) currentLang = 'en';
+const validLangs = Object.keys(translations);
+let storedLang = null;
+try { storedLang = localStorage.getItem('tosca_lang'); } catch (e) {}
+let currentLang = validLangs.includes(storedLang) ? storedLang : 'en';
 
 function applyTranslation() {
   const t = translations[currentLang];
-  document.documentElement.lang = currentLang;
-  searchBar.placeholder = t.searchPlaceholder;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
-  if (products.length) { renderChips(); renderCatalog(); }
-  renderCart();
+
+  document.documentElement.lang = currentLang === 'sq' ? 'sq' : currentLang === 'mk' ? 'mk' : 'en';
+  if (searchBar) searchBar.placeholder = t.searchPlaceholder;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const value = t[el.dataset.i18n];
+    if (typeof value === 'string') el.textContent = value;
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    const isActive = btn.dataset.lang === currentLang;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', String(isActive));
+  });
+
+  if (catalogData.length > 0) {
+    populateBrandDropdown();
+    applyAllFilters();
+  }
 }
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    currentLang = btn.dataset.lang;
-    localStorage.setItem('tosca_lang', currentLang);
+  btn.addEventListener('click', (e) => {
+    currentLang = e.currentTarget.dataset.lang;
+    try { localStorage.setItem('tosca_lang', currentLang); } catch (err) {}
     applyTranslation();
   });
 });
 
 // ==========================================
-// 3. Utility Functions & UI Feedback
+// 3. Utility Functions
 // ==========================================
-const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
-const money = (n) => `${currency} ${n.toLocaleString('en-US')}`;
+function normalizeString(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
 
 function hideLoader() {
   if (loader && !loader.classList.contains('hide-loader')) {
     loader.classList.add('hide-loader');
-    setTimeout(() => { loader.style.display = 'none'; }, 400);
+    setTimeout(() => { loader.style.display = 'none'; }, 400); 
   }
 }
 
-function showToast(message) {
-  const container = $('#toast-container');
-  if (!container) return;
-  const toast = document.createElement('div');
-  toast.className = 'toast';
-  toast.textContent = message;
-  container.appendChild(toast);
+// ==========================================
+// 4. UI Builders
+// ==========================================
+function populateBrandDropdown() {
+  if (!brandSelect) return;
+  const uniqueBrands = new Set();
   
-  // Trigger reflow to ensure the transition plays
-  void toast.offsetWidth;
-  toast.classList.add('show');
+  catalogData.forEach(item => {
+    const brandName = item.brand ? item.brand.trim() : 'Unknown';
+    uniqueBrands.add(brandName);
+  });
   
-  setTimeout(() => {
-    toast.classList.remove('show');
-    toast.addEventListener('transitionend', () => toast.remove());
-  }, 2500);
-}
-
-// ==========================================
-// 4. Catalog UI (cards, variants, brand chips)
-// ==========================================
-const selectedVariant = (p) => (skuIndex.get(state.selected[p.id]) || {}).variant || p.variants[0];
-
-function cardHTML(p) {
-  const v = selectedVariant(p);
-  const t = translations[currentLang];
+  uniqueBrands.delete('Unknown');
+  const sortedBrands = Array.from(uniqueBrands).sort();
   
-  const notesHtml = p.notes && p.notes.length 
-    ? `<div class="product-notes">${p.notes.map(n => `<span class="note-tag">${esc(n)}</span>`).join('')}</div>` 
-    : '';
-
-  const pills = p.variants.length > 1
-    ? `<div class="variant-pills" role="group" aria-label="${esc(p.name)}">${p.variants.map(x =>
-        `<button type="button" class="variant-pill${x.sku === v.sku ? ' is-active' : ''}" data-sku="${esc(x.sku)}" aria-pressed="${x.sku === v.sku}">${esc(x.label)}</button>`
-      ).join('')}</div>`
-    : '';
-    
-  return `
-    <article class="product-card" data-id="${esc(p.id)}">
-      <div class="product-media"><img class="product-img" src="${esc(v.image || p.image)}" alt="${esc(p.brand + ' ' + p.name)}" loading="lazy"></div>
-      <div class="product-body">
-        <p class="product-brand">${esc(p.brand)}</p>
-        <h3 class="product-name">${esc(p.name)}</h3>
-        ${notesHtml}
-        ${pills}
-        <p class="product-price">${money(v.price)}</p>
-        <button type="button" class="btn-add" data-add>${t.addToCart}</button>
-      </div>
-    </article>`;
-}
-
-function renderCatalog() {
-  catalogEl.innerHTML = products.map(cardHTML).join('') +
-    `<p id="no-results" class="no-results" hidden>${translations[currentLang].noResults}</p>`;
-  applyFilters();
-}
-
-function updateCard(card, p) {
-  const v = selectedVariant(p);
-  card.querySelectorAll('.variant-pill').forEach(b => {
-    const on = b.dataset.sku === v.sku;
-    b.classList.toggle('is-active', on);
-    b.setAttribute('aria-pressed', on);
+  const previous = brandSelect.value || 'all';
+  brandSelect.innerHTML = '';
+  const allOption = document.createElement('option');
+  allOption.value = 'all';
+  allOption.textContent = translations[currentLang].allBrands;
+  brandSelect.appendChild(allOption);
+  sortedBrands.forEach(brand => {
+    const option = document.createElement('option');
+    option.value = brand.toLowerCase();
+    option.textContent = brand;
+    brandSelect.appendChild(option);
   });
-  card.querySelector('.product-price').textContent = money(v.price);
-  card.querySelector('.product-img').src = v.image || p.image;
+  brandSelect.value = previous;
 }
 
-function flashAdded(btn) {
-  btn.classList.add('is-added');
-  clearTimeout(btn._t);
-  btn._t = setTimeout(() => {
-    btn.classList.remove('is-added');
-  }, 1200);
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
-function renderChips() {
-  const chip = (value, label) =>
-    `<button type="button" class="filter-pill${state.brand === value ? ' active' : ''}" data-brand="${esc(value)}" aria-pressed="${state.brand === value}">${esc(label)}</button>`;
-  brandChips.innerHTML = chip('all', translations[currentLang].all) + topBrands.map(b => chip(b, b)).join('');
-}
+// Catalog names are entered as "Name - Brand" or "Brand - Name". For display,
+// drop the brand part (it is shown on its own line) and keep the WhatsApp text untouched.
+const brandAliases = ['yessaintlaurent', 'boss', 'xejroff', 'mansionfranciskurkdjianparis', 'myburberry'];
 
-function syncChips() {
-  brandChips.querySelectorAll('[data-brand]').forEach(c => {
-    const on = c.dataset.brand === state.brand;
-    c.classList.toggle('active', on);
-    c.setAttribute('aria-pressed', on);
+function displayTitle(item) {
+  const brandKey = normalizeString(item.brand || '');
+  const parts = item.name.split(/\s*-\s*/).filter(Boolean);
+  const kept = parts.filter(p => {
+    const key = normalizeString(p);
+    return key !== brandKey && !brandAliases.includes(key);
   });
+  return kept.length ? kept.join(' – ') : item.name;
 }
 
-// ==========================================
-// 5. Filtering Engine (instant, DOM-only)
-// ==========================================
-function applyFilters() {
-  let shown = 0;
-  catalogEl.querySelectorAll('.product-card').forEach(card => {
-    const p = productById.get(card.dataset.id);
-    const ok = (state.gender === 'all' || p.gender === state.gender)
-            && (state.brand === 'all' || p.brand === state.brand)
-            && (!state.search || p._s.includes(state.search));
-    card.hidden = !ok;
-    if (ok) shown++;
-  });
-  const empty = $('#no-results');
-  if (empty) empty.hidden = shown > 0;
+function formatPrice(price) {
+  return price.replace(/^MKD\s*/i, 'MKD ');
 }
 
-// ==========================================
-// 6. Cart (state, persistence, drawer, WhatsApp checkout)
-// ==========================================
-function loadCart() {
-  try {
-    const raw = JSON.parse(localStorage.getItem(CART_KEY));
-    return Array.isArray(raw) ? raw.filter(i => i && typeof i.sku === 'string' && i.qty > 0) : [];
-  } catch { return []; }
-}
+function renderCatalog(items) {
+  if (!catalogContainer) return;
+  const t = translations[currentLang]; 
 
-function saveCart() {
-  try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch { /* storage unavailable */ }
-}
+  if (resultCount) resultCount.textContent = t.count(items.length);
 
-function addToCart(sku) {
-  const line = cart.find(i => i.sku === sku);
-  if (line) line.qty = Math.min(line.qty + 1, 99); else cart.push({ sku, qty: 1 });
-  saveCart();
-  renderCart();
-  cartCount.classList.remove('bump');
-  void cartCount.offsetWidth; // restart the animation
-  cartCount.classList.add('bump');
-}
+  if (items.length === 0) {
+    catalogContainer.innerHTML = `<p class="empty-state">${t.noResults}</p>`;
+    return;
+  }
 
-function changeQty(sku, delta) {
-  const line = cart.find(i => i.sku === sku);
-  if (!line) return;
-  line.qty += delta;
-  if (line.qty <= 0) cart = cart.filter(i => i.sku !== sku);
-  else line.qty = Math.min(line.qty, 99);
-  saveCart();
-  renderCart();
-}
+  const htmlString = items.map(item => {
+    const text = `${t.waText} ${item.name} (${item.price}).`;
+    const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+    const title = escapeHtml(displayTitle(item));
+    const brand = item.brand ? `<p class="product-brand">${escapeHtml(item.brand)}</p>` : '';
 
-function removeLine(sku) {
-  cart = cart.filter(i => i.sku !== sku);
-  saveCart();
-  renderCart();
-}
-
-const cartLines = () => cart.map(i => ({ ...i, ...skuIndex.get(i.sku) })).filter(l => l.product);
-
-function waLink(lines, total) {
-  const t = translations[currentLang];
-  const rows = lines.map((l, i) => {
-    const size = l.product.variants.length > 1 ? ` (${l.variant.label})` : '';
-    return `${i + 1}. ${l.product.brand} ${l.product.name}${size} × ${l.qty} - ${money(l.qty * l.variant.price)}`;
-  });
-  const text = [t.waText, '', ...rows, '', `${t.total}: ${money(total)}`].join('\n');
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-}
-
-function renderCart() {
-  const t = translations[currentLang];
-  const lines = cartLines();
-  const count = lines.reduce((n, l) => n + l.qty, 0);
-  const total = lines.reduce((s, l) => s + l.qty * l.variant.price, 0);
-
-  cartCount.textContent = count;
-  cartCount.hidden = !count;
-  cartTitle.textContent = t.cartTitle + (count ? ` (${count})` : '');
-  cartTotalLabel.textContent = t.total;
-  cartTotalEl.textContent = money(total);
-  checkoutBtn.textContent = t.checkout;
-  checkoutBtn.classList.toggle('disabled', !lines.length);
-  checkoutBtn.setAttribute('aria-disabled', String(!lines.length));
-  checkoutBtn.href = lines.length ? waLink(lines, total) : '#';
-
-  const emptyHtml = `
-    <div class="cart-empty">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <path d="M16 10a4 4 0 0 1-8 0"></path>
-      </svg>
-      <p>${t.empty}</p>
-    </div>`;
-
-  cartItemsEl.innerHTML = lines.length ? lines.map(l => `
-    <div class="cart-item" data-sku="${esc(l.sku)}">
-      <img class="cart-thumb" src="${esc(l.variant.image || l.product.image)}" alt="">
-      <div class="cart-info">
-        <p class="cart-brand">${esc(l.product.brand)}</p>
-        <p class="cart-name">${esc(l.product.name)}</p>
-        ${l.product.variants.length > 1 ? `<p class="cart-variant">${esc(l.variant.label)}</p>` : ''}
-        <div class="qty">
-          <button type="button" data-qty="-1" aria-label="Decrease quantity">−</button>
-          <span>${l.qty}</span>
-          <button type="button" data-qty="1" aria-label="Increase quantity">+</button>
+    return `
+      <article class="product-card">
+        <div class="product-img-wrap">
+          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" loading="lazy" class="product-img">
         </div>
-      </div>
-      <div class="cart-line">
-        <span class="cart-line-price">${money(l.qty * l.variant.price)}</span>
-        <button type="button" class="cart-remove" data-remove>${t.remove}</button>
-      </div>
-    </div>`).join('') : emptyHtml;
-}
+        <div class="product-info">
+          <h3 class="product-name">${title}</h3>
+          ${brand}
+          <p class="product-price">${escapeHtml(formatPrice(item.price))}</p>
+          <a href="${waLink}" target="_blank" rel="noopener noreferrer" class="btn-order">${t.orderBtn}</a>
+        </div>
+      </article>
+    `;
+  }).join('');
 
-let lastFocus = null;
-function setCartOpen(open) {
-  cartDrawer.classList.toggle('open', open);
-  cartOverlay.classList.toggle('open', open);
-  cartDrawer.setAttribute('aria-hidden', String(!open));
-  cartToggle.setAttribute('aria-expanded', String(open));
-  document.body.classList.toggle('no-scroll', open);
-  if (open) {
-    lastFocus = document.activeElement;
-    requestAnimationFrame(() => cartClose.focus());
-  } else if (lastFocus && lastFocus.focus) {
-    lastFocus.focus();
-  }
+  catalogContainer.innerHTML = htmlString;
 }
 
 // ==========================================
-// 7. Data Initialization
+// 5. Filtering & Sorting Engine
+// ==========================================
+function applyAllFilters() {
+  // 1. Filter out items
+  let filtered = catalogData.filter(item => {
+    const rawPriceStr = item.price.replace(/[^\d]/g, ''); 
+    const priceNum = parseInt(rawPriceStr, 10);
+    const itemBrand = item.brand ? item.brand.toLowerCase() : "";
+
+    const matchesSearch = filterState.search === '' ||
+      normalizeString(`${item.name} ${item.brand || ''}`).includes(filterState.search);
+    const matchesGender = filterState.gender === 'all' || item.gender === filterState.gender;
+    const matchesBrand = filterState.brand === 'all' || itemBrand === filterState.brand; 
+    const matchesPrice = priceNum <= filterState.maxPrice;
+
+    return matchesSearch && matchesGender && matchesBrand && matchesPrice;
+  });
+
+  // 2. Sort remaining items
+  if (filterState.sortBy === 'price-asc') {
+    filtered.sort((a, b) => {
+      const priceA = parseInt(a.price.replace(/[^\d]/g, ''), 10);
+      const priceB = parseInt(b.price.replace(/[^\d]/g, ''), 10);
+      return priceA - priceB;
+    });
+  } else if (filterState.sortBy === 'price-desc') {
+    filtered.sort((a, b) => {
+      const priceA = parseInt(a.price.replace(/[^\d]/g, ''), 10);
+      const priceB = parseInt(b.price.replace(/[^\d]/g, ''), 10);
+      return priceB - priceA; 
+    });
+  }
+
+  // 3. Render
+  renderCatalog(filtered);
+}
+
+// ==========================================
+// 6. Data Initialization
 // ==========================================
 async function loadCatalog() {
   try {
-    // Explicitly fetching the updated catalog file
     const response = await fetch('catalog.json');
     if (!response.ok) throw new Error('Failed to load catalog data');
-    const data = await response.json();
-
-    currency = data.currency || 'MKD';
-    products = data.products;
-    const counts = new Map();
-    products.forEach(p => {
-      productById.set(p.id, p);
-      p._s = norm([p.brand, p.name, ...(p.notes || []), ...p.variants.map(v => v.label).filter(l => l !== 'Original')].join(' '));
-      p.variants.forEach(v => skuIndex.set(v.sku, { product: p, variant: v }));
-      counts.set(p.brand, (counts.get(p.brand) || 0) + 1);
-    });
-    // Top 8 brands by number of products
-    topBrands = [...counts].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([brand]) => brand);
-
-    cart = cart.filter(i => skuIndex.has(i.sku)); 
-    saveCart();
-    applyTranslation();
+    
+    catalogData = await response.json(); 
+    
+    populateBrandDropdown(); 
+    applyTranslation(); 
   } catch (error) {
-    console.error('Data load error:', error);
-    catalogEl.innerHTML = '<p class="no-results">Failed to load the catalog. Please refresh.</p>';
+    console.error("Data load error:", error);
+    if (catalogContainer) {
+      catalogContainer.innerHTML = '<p class="empty-state error">Could not load the catalog. Check your connection and refresh the page.</p>';
+    }
   }
 }
 
 // ==========================================
-// 8. Event Listeners
+// 7. Event Listeners (UI Interactions)
 // ==========================================
-searchBar.addEventListener('input', () => {
-  state.search = norm(searchBar.value);
-  applyFilters();
-});
-searchBar.addEventListener('keydown', (e) => { if (e.key === 'Enter') searchBar.blur(); });
+let searchTimeout;
+if (searchBar) {
+  searchBar.addEventListener('input', (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      filterState.search = normalizeString(e.target.value);
+      applyAllFilters();
+    }, 300); 
+  });
+}
 
-brandChips.addEventListener('click', (e) => {
-  const chip = e.target.closest('[data-brand]');
-  if (!chip) return;
-  state.brand = chip.dataset.brand === state.brand ? 'all' : chip.dataset.brand;
-  syncChips();
-  applyFilters();
-  chip.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-});
+if (filterPills) {
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', (e) => {
+      filterPills.forEach(p => p.classList.remove('active'));
+      e.target.classList.add('active');
+      
+      filterState.gender = e.target.getAttribute('data-value');
+      applyAllFilters();
+    });
+  });
+}
 
-genderRow.addEventListener('click', (e) => {
-  const pill = e.target.closest('[data-value]');
-  if (!pill) return;
-  state.gender = pill.dataset.value;
-  genderRow.querySelectorAll('[data-value]').forEach(p => p.classList.toggle('active', p === pill));
-  applyFilters();
-});
-
-catalogEl.addEventListener('click', (e) => {
-  const card = e.target.closest('.product-card');
-  if (!card) return;
-  const p = productById.get(card.dataset.id);
-  
-  const pill = e.target.closest('.variant-pill');
-  if (pill) {
-    state.selected[p.id] = pill.dataset.sku;
-    updateCard(card, p);
-    return;
+let sheetTimer;
+function toggleSheet(show) {
+  if (!filterOverlay || !advancedFiltersSheet) return;
+  clearTimeout(sheetTimer);
+  if (show) {
+    filterOverlay.classList.remove('hidden');
+    advancedFiltersSheet.classList.remove('hidden');
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      filterOverlay.classList.add('active');
+      advancedFiltersSheet.classList.add('open');
+      btnCloseFilters.focus();
+    }));
+  } else {
+    filterOverlay.classList.remove('active');
+    advancedFiltersSheet.classList.remove('open');
+    sheetTimer = setTimeout(() => {
+      filterOverlay.classList.add('hidden');
+      advancedFiltersSheet.classList.add('hidden');
+    }, 300);
+    btnOpenFilters.focus();
   }
-  
-  const add = e.target.closest('[data-add]');
-  if (add) {
-    const v = selectedVariant(p);
-    addToCart(v.sku);
-    flashAdded(add);
-    
-    // Trigger toast notification
-    const t = translations[currentLang];
-    const variantStr = p.variants.length > 1 ? ` (${v.label})` : '';
-    showToast(`${p.name}${variantStr} ${t.added.toLowerCase()}`);
-  }
-});
+}
 
-// Cart drawer UI events
-cartToggle.addEventListener('click', () => setCartOpen(true));
-cartClose.addEventListener('click', () => setCartOpen(false));
-cartOverlay.addEventListener('click', () => setCartOpen(false));
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && cartDrawer.classList.contains('open')) setCartOpen(false);
+  if (e.key === 'Escape' && advancedFiltersSheet && advancedFiltersSheet.classList.contains('open')) toggleSheet(false);
 });
-cartItemsEl.addEventListener('click', (e) => {
-  const item = e.target.closest('.cart-item');
-  if (!item) return;
-  const qtyBtn = e.target.closest('[data-qty]');
-  if (qtyBtn) changeQty(item.dataset.sku, Number(qtyBtn.dataset.qty));
-  else if (e.target.closest('[data-remove]')) removeLine(item.dataset.sku);
-});
-checkoutBtn.addEventListener('click', (e) => { if (!cart.length) e.preventDefault(); });
+
+if (btnOpenFilters) btnOpenFilters.addEventListener('click', () => toggleSheet(true));
+if (btnCloseFilters) btnCloseFilters.addEventListener('click', () => toggleSheet(false));
+if (filterOverlay) filterOverlay.addEventListener('click', () => toggleSheet(false));
+
+if (priceSlider && priceDisplay) {
+  priceSlider.addEventListener('input', (e) => {
+    priceDisplay.textContent = `MKD ${Number(e.target.value).toLocaleString('en-US')}`;
+  });
+}
+
+if (btnApplyFilters && brandSelect && priceSlider && sortSelect) {
+  btnApplyFilters.addEventListener('click', () => {
+    filterState.brand = brandSelect.value;
+    filterState.maxPrice = parseInt(priceSlider.value, 10);
+    filterState.sortBy = sortSelect.value; 
+    
+    applyAllFilters();
+    toggleSheet(false);
+  });
+}
 
 if (scrollTopBtn) {
   window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('show-btn', window.scrollY > 300);
+    if (window.scrollY > 300) scrollTopBtn.classList.add('show-btn');
+    else scrollTopBtn.classList.remove('show-btn');
   });
-  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
 
 // ==========================================
-// 9. Bootstrap Application
+// 8. Bootstrap Application
 // ==========================================
 window.addEventListener('load', hideLoader);
-setTimeout(hideLoader, 3000);
+setTimeout(hideLoader, 3000); 
 
 loadCatalog();
